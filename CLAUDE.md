@@ -47,28 +47,62 @@ axes** before picking it up.
 
 |                          | **Defining (statement only)** | **Solving (filling a sorry)** |
 | ------------------------ | ----------------------------- | ----------------------------- |
-| **Known informal proof** | Many `good first issue` tickets — pick a known conjecture from a list, write its Lean statement, ship `:= by sorry`. | **Phase 1 of this project.** Take a sorry whose informal proof is in the literature and write a Lean version. |
-| **No known proof**       | Defining a genuinely open conjecture. The headline `category research open` files in the repo. | **Phase 2 of this project.** Proving an open conjecture. Out of reach until Phase 1 has produced merged PRs. |
+| **Known informal proof** | `formal-conjectures`' job — they own this column. | **Goal 2 of this project.** Pick a sorry whose informal proof is in the literature, write the Lean version. |
+| **No known proof**       | `formal-conjectures`' job too. | **Goal 3 of this project.** Pick a sorry whose proof exists *nowhere yet* — informal or formal — and produce one. |
 
 Always classify the target before starting. Memos must say *which
-cell* the work falls in. Never describe Phase 1 work as "proving new
+cell* the work falls in. Never describe Goal-2 work as "proving new
 mathematics" — that conflates known-proof formalisation with novel
 proof creation.
 
-## Goals (in order)
+**Off-limits — `formal-conjectures`' spirit, which is theirs.**
+The whole left column ("defining the problem in Lean") is *their*
+mission, not ours. We never close upstream issues like
+[`#991` (formalise Erdős 869)](https://github.com/google-deepmind/formal-conjectures/issues/991)
+that ask for a new statement to be added. We never write a new
+`theorem foo : P := by sorry` in their repo as a contribution.
+Erdős 869 is informally disproved on
+[`erdosproblems.com/869`](https://www.erdosproblems.com/869) — but
+*the statement is not in the repo yet*, so there is no sorry for us
+to fill, so it is not a target for us. The same diagnostic applies
+to every candidate: **is the statement already formalised? if not,
+ignore.**
 
-1. **Phase 1 — solving with known proofs.** Lower-right cell:
-   replace `:= by sorry` placeholders in `formal-conjectures` whose
-   informal proofs already exist in the literature with short
-   (≤ 25–50 line) Lean proofs. Prefer `category research solved`,
-   `category textbook`, `category test`, and `category API`. Avoid
-   `category research open` unless the variant is a known classical
-   result.
-2. **Phase 2 — solving with new proofs.** Lower-left cell:
-   genuinely open problems where Claude's strengths (mathlib search,
-   definitional bookkeeping, tactic enumeration) give us a real shot.
-   We do not pretend Phase 2 work until Phase 1 has produced merged
-   PRs.
+## Goals (in order — a pipeline, not parallel)
+
+1. **Goal 1 — Catalogue.** Build and maintain a precise map of
+   what's already formally proved in `formal-conjectures`:
+   - **inline-proved** (body is not `sorry`),
+   - **linked elsewhere** (body is `sorry` plus a `@[formal_proof using …]` annotation),
+   - **naked sorry, known informally** (`category research solved`/`textbook`/`test` with no annotation),
+   - **naked sorry, unknown** (`category research open` with no annotation).
+
+   The catalogue lives in this repo (`catalogue/` directory) as
+   machine-readable JSON plus a Markdown summary memo. Goals 2 and 3
+   each pull their candidates from a different column; without the
+   catalogue we can't tell "still open" from "already shipped
+   elsewhere."
+
+2. **Goal 2 — Formalise known proofs.** Lower-right cell of the
+   2×2: take a naked sorry whose informal proof is in the literature
+   and write the Lean version.
+   - **Short** (≤ 25–50 lines): inline in `formal-conjectures`,
+     PR upstream when the user gives the go-ahead.
+   - **Long** (more than that): full proof in `proofs/` of *this*
+     repo, plus a one-line `@[formal_proof using lean4 at "<our-url>"]`
+     annotation upstream. The upstream README explicitly invites
+     this and it removes the 25–50-line ceiling without violating
+     their rules.
+
+3. **Goal 3 — Solve unsolved formalised problems.** Lower-left
+   cell: a sorry whose proof exists *nowhere* — neither inline,
+   nor linked, nor in any informal source we can find. Produce a
+   formal proof. This is the apex goal. Yield will be very low —
+   most `category research open` entries are Riemann-/Goldbach-class
+   — but the catalogue makes the search systematic. Even an
+   *interesting partial result* (a counterexample, a conditional
+   proof, a sharp special case) on a previously-unsettled
+   formalised conjecture counts.
 
 We do **not** chase low-hanging fruit (pure `decide` testcase PRs,
 trivial restatements, metadata-only PRs, *defining* PRs that just
@@ -261,35 +295,64 @@ These come from the upstream `README.md`, `AGENTS.md`, and
 
 ---
 
-## Approach we have committed to
+## Approach we have committed to (the staged pipeline)
 
-This is the strategy worked out in the founding session and ratified by
-the user (memo `0002-survey-formal-conjectures-repo.md` records the full
-analysis):
+The three goals run as **stages, not in parallel**. Stage A gates
+B; B and C feed off A.
 
-1. We start in **Phase 1** — *solving with known proofs*. Targets are
-   `:= by sorry` placeholders in `category research solved`,
-   `category textbook`, `category test`, and `category API` files
-   whose informal proof already exists in the literature. We prefer
-   the `Subsets/FC100SolvedSet1` list because every proof there
-   directly improves the published benchmark.
-2. We avoid `native_decide`, deep paper-only proofs, and anything that
-   needs new ForMathlib API beyond what we can build in the same PR.
-3. Each target gets a `target-...` memo first. The memo states **which
-   cell of the defining/solving × known/unknown 2×2 the work falls
-   in**, the informal proof sketch, the mathlib lemmas we expect to
-   need, an estimated line budget, and a go/no-go verdict. We do not
-   start proving until the target memo exists.
-4. After a successful proof, we write a `proof-...` memo with the
-   final tactic listing, the axiom-check output, and (importantly)
-   an honest note distinguishing *what was already in the literature*
-   from *what was new in this PR*. For Phase 1 work that note is
-   "the proof was already known; this PR is the formal translation."
-5. After a failed attempt, we write a `fail-...` memo.
-6. Phase 2 (*solving with new proofs* — genuine new mathematics)
-   only begins after at least one merged Phase 1 PR has shown the
-   workflow scales. PR descriptions, commit messages, and memos
-   must never claim Phase 2 originality for Phase 1 work.
+1. **Stage A — build the catalogue (Goal 1).** Script
+   `formal-conjectures/FormalConjectures/` for every `theorem` /
+   `lemma`, extract: file path, fully-qualified name,
+   `@[category …]`, `@[AMS …]`, whether the body reduces to a naked
+   `sorry` or `by sorry`, and any `@[formal_proof using <kind> at
+   "<url>"]` annotations (kind + URL each). Output to
+   `catalogue/index.json` (machine-readable) plus a Markdown
+   summary memo in `memory/`. Re-run the script when upstream
+   updates. The catalogue, not ad-hoc grep, is the candidate
+   pool for stages B and C.
+2. **Stage B — Goal 2 work.** Filter the catalogue to "naked
+   sorry, known informally" (mostly `category research solved`
+   with no `formal_proof` annotation). Pick by tractability and
+   mathlib readiness, the same way memo `0002` did. Two formats:
+   - **Short** (≤ 25–50 lines): inline in `formal-conjectures`,
+     PR upstream when the user gives the go-ahead. (`cambie`
+     was item 1 of this stream.)
+   - **Long**: full proof in `proofs/` of *this* repo, then PR
+     upstream a one-line `@[formal_proof using lean4 at
+     "https://github.com/mrmartin/claude_proving_new_mathematics/..."]`
+     annotation. The upstream README explicitly invites this.
+3. **Stage C — Goal 3 work.** From the "naked sorry, unknown"
+   column. Bias toward small variants of bigger problems, sharp
+   computational claims about specific objects, and combinatorial
+   conjectures where mathlib has the heavy machinery and the
+   missing piece is one new lemma. An interesting *partial* result
+   (counterexample, conditional proof, sharp special case) on a
+   previously-unsettled formalised conjecture counts.
+
+Procedural rules (apply across stages):
+
+- We avoid `native_decide`, deep paper-only proofs, and anything
+  that needs new ForMathlib API beyond what we can build in the
+  same PR.
+- Every target gets a `target-...` memo first. The memo states
+  **which cell of the 2×2 the work falls in**, what's been
+  checked against erdosproblems.com or the relevant external
+  source, the informal proof sketch (or "no informal proof" for
+  Goal 3), the mathlib lemmas we expect, a line budget, and a
+  go/no-go verdict. We do not start proving until the target
+  memo exists.
+- After a successful proof, we write a `proof-...` memo with the
+  final tactic listing, the axiom-check output, and (importantly)
+  an honest note distinguishing *what was already in the literature*
+  from *what was new in this PR*. For Goal 2 work that note is
+  "the proof was already known; this PR is the formal translation."
+  For Goal 3 work it states the actual mathematical contribution.
+- After a failed attempt, we write a `fail-...` memo.
+- Goal 3 contributions never get described in commit messages,
+  PR bodies, or memos using language stronger than the
+  mathematical reality. If the contribution is a partial result,
+  say partial; if it's conditional, say conditional. **Goal-2
+  work is never described as Goal-3 work.**
 
 **Working principles for new mathematics, when we get there:**
 
@@ -308,6 +371,54 @@ analysis):
   commit hashes). Future memos are searchable; vague references are not.
 
 ---
+
+## External resources — where to look up status
+
+When evaluating a candidate, check these external lookups
+*before* writing a target memo. Status from these resources tells
+us whether a problem has an informal proof (Goal 2 territory), a
+formal proof shipped elsewhere (skip), or genuinely no proof at
+all (Goal 3 territory).
+
+- **`https://www.erdosproblems.com/<N>`** — definitive lookup for
+  any Erdős problem `N`. Erdős problems form ~50% of the
+  `formal-conjectures` corpus, so this is the highest-leverage
+  resource we have. Each page lists status (open / solved /
+  disproved), references to the relevant papers, and (when known)
+  links to formal proofs in Lean / Coq / etc. Treat it as
+  authoritative for "is this already shipped elsewhere?".
+  Example: `erdosproblems.com/399` for `Erdos399.*`,
+  `erdosproblems.com/869` for `Erdos869.*`. The numeric suffix in
+  upstream filenames (`FormalConjectures/ErdosProblems/N.lean`)
+  matches exactly.
+- **`https://oeis.org/A<NNN>`** — OEIS for any `OeisA<NNN>` file
+  in the repo. Useful for sequence-based conjectures, with
+  references and known formulae.
+- **`https://en.wikipedia.org/wiki/<conjecture>`** — for
+  `Wikipedia/*.lean` files; sometimes lists a Lean formalisation.
+- **`https://mathoverflow.net/questions/<id>`** — for
+  `Mathoverflow/<id>.lean` files. Often the comments include
+  partial proofs or counterexample constructions.
+- **arXiv links** — most `Paper/` and `Arxiv/` files cite the
+  source paper. The paper *is* the informal proof for those
+  entries.
+- **Mathlib search via the lean4-skills LSP tools** —
+  `lean_local_search`, `lean_leanfinder`, `lean_loogle`,
+  `lean_leansearch`. Run these before tactic search; if a lemma
+  already exists, find it.
+- **`formal-conjectures` issue tracker** — search by problem
+  number to see whether somebody else is already working on
+  the *defining* PR (off-limits for us) or the *solving* PR
+  (potentially relevant; coordinate via Zulip if so).
+- **Upstream `Subsets/FC100SolvedSet1.lean` and `FC100OpenSet1.lean`** —
+  curated benchmark slices. Proofs in `FC100SolvedSet1` count
+  as benchmark deltas; proofs in `FC100OpenSet1` are Goal-3
+  attempts on genuinely open problems.
+
+When the catalogue (Goal 1) is built, every entry should have a
+**`status_url`** field with the relevant external lookup, so
+future targeting reduces to a table query rather than a manual
+search.
 
 ## Reminders
 

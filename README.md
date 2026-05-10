@@ -16,31 +16,84 @@ whenever you add or change a memo**.
 for new conversations: goals, process, rules, the strategy we've committed
 to. Read it first if you are picking this project up cold.
 
-## Goals
+## Goals (a pipeline, not parallel work)
 
-1. **Phase 1 — solving with known proofs.** Take a `:= by sorry` whose
-   informal proof already exists in the literature, and write a short
-   Lean version (≤ 25–50 lines).
-2. **Phase 2 — solving with new proofs.** Genuinely open problems where
-   Claude's mathlib search and tactic enumeration give us a real shot.
-   Deferred until Phase 1 has produced merged PRs.
+`formal-conjectures` exists to **formalise problems** — write the
+Lean statement of a conjecture, ship it as `:= by sorry`. Their
+spirit is the *statement corpus*. We do not contribute to that.
+Our work is **orthogonal**, oriented at the *proof corpus*:
 
-We are not chasing low-hanging fruit (pure `decide` testcases, restatement
-PRs, *defining* PRs that just add new sorries) or Fields-medal headlines
-(Goldbach, Riemann, Beal, Apéry, Mihailescu).
+1. **Goal 1 — Catalogue.** Build and maintain a precise map of
+   what's already formally proved in `formal-conjectures` —
+   inline-proved, linked elsewhere via `@[formal_proof using …]`,
+   naked sorry with a known informal proof, naked sorry with no
+   proof anywhere. The catalogue lives in this repo
+   (`catalogue/index.json` + a Markdown summary memo) and is the
+   candidate pool for goals 2 and 3.
+2. **Goal 2 — Formalise known proofs.** Take a naked sorry whose
+   informal proof is already in the literature, and write the
+   Lean version. Short proofs (≤ 25–50 lines) go inline upstream;
+   long proofs go in `proofs/` here, with a one-line
+   `@[formal_proof using lean4 at "<our-url>"]` annotation
+   upstream. The cambie work was Goal-2 short.
+3. **Goal 3 — Solve unsolved formalised problems.** A naked sorry
+   whose proof exists *nowhere* — neither inline, nor linked, nor
+   informally. Produce a formal proof. This is the apex goal;
+   yield will be very low. An *interesting partial result*
+   (counterexample, conditional proof, sharp special case) on a
+   previously-unsettled formalised conjecture also counts.
+
+### Off-limits
+
+The whole "defining the problem in Lean" column is `formal-conjectures`'
+job, not ours. We never close upstream issues like
+[`#991` (formalise Erdős 869)](https://github.com/google-deepmind/formal-conjectures/issues/991)
+that ask for a new statement. Erdős 869 is informally disproved
+on [`erdosproblems.com/869`](https://www.erdosproblems.com/869) —
+but the statement is not in the repo yet, so there is no sorry
+for us to fill, so it is **not** a target. The diagnostic for
+every candidate: *is the statement already formalised? if not,
+ignore.*
 
 ### A taxonomy worth being precise about
 
-`formal-conjectures` accepts two distinct kinds of work that look similar
-from a distance, and within each, two further kinds:
-
 |                          | **Defining (statement only)** | **Solving (filling a sorry)** |
 | ------------------------ | ----------------------------- | ----------------------------- |
-| **Known informal proof** | Most `good first issue` tickets — pick a literature conjecture, write its Lean statement, ship `:= by sorry`. | **Phase 1 here.** Translate a literature proof into Lean. |
-| **No known proof**       | Defining a still-open conjecture. The bulk of `category research open` files. | **Phase 2 here.** Proving an open conjecture. New mathematics. |
+| **Known informal proof** | `formal-conjectures`' job — they own this column. | **Goal 2 here.** Translate a literature proof into Lean. |
+| **No known proof**       | `formal-conjectures`' job too. | **Goal 3 here.** Proving an open conjecture. New mathematics. |
 
 `CLAUDE.md` enforces these distinctions on every memo and PR.
-We never describe Phase 1 work as "proving new mathematics."
+We never describe Goal-2 work as "proving new mathematics."
+
+### External resources
+
+- **`https://www.erdosproblems.com/<N>`** — definitive lookup for
+  any Erdős problem `N`. Erdős problems are ~50 % of the upstream
+  corpus, so this is our highest-leverage external resource.
+  Each page reports status (open / solved / disproved) and
+  references; treat it as authoritative for "is this already
+  shipped elsewhere?". File-name match is exact:
+  `FormalConjectures/ErdosProblems/<N>.lean` ↔
+  `erdosproblems.com/<N>`.
+- **`https://oeis.org/A<NNN>`** — for `OeisA<NNN>` files.
+- **`https://en.wikipedia.org/wiki/<conjecture>`** — for
+  `Wikipedia/*.lean` files.
+- **`https://mathoverflow.net/questions/<id>`** — for
+  `Mathoverflow/<id>.lean` files.
+- arXiv links cited by `Paper/` and `Arxiv/` files.
+- mathlib via lean4-skills LSP search tools.
+- `formal-conjectures` issue tracker (search by problem number).
+- Upstream `Subsets/FC100SolvedSet1.lean` and
+  `FC100OpenSet1.lean` benchmark slices.
+
+When the catalogue (Goal 1) is built, every entry will carry a
+`status_url` linking to the appropriate resource above so
+targeting reduces to a table query.
+
+We are **not** chasing low-hanging fruit (pure `decide` testcases,
+restatement PRs, *defining* PRs that add new sorries) or
+Fields-medal headlines (Goldbach, Riemann, Beal, Apéry,
+Mihailescu).
 
 ## Memory index
 
