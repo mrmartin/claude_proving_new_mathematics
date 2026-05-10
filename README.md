@@ -107,6 +107,7 @@ Mihailescu).
 | 0006 | infra  | [Lean-side Erdős catalogue (Stage A, slice 2)](memory/0006-infra-lean-side-erdos-catalogue.md) | shipped     |
 | 0007 | proof  | [Erdős 38 — reproducing the spicylemonade/Aristotle proof locally](memory/0007-proof-erdos-38.md) | shipped (local) |
 | 0008 | proof  | [Erdős 38 — bridge from `erdos_problem_38` to upstream `erdos_38` signature](memory/0008-bridge-erdos-38.md) | shipped (local) |
+| 0009 | target | [Erdős 397 — Wu/Aristotle disproof of "finitely many central-binomial collisions"](memory/0009-target-erdos-397.md) | go |
 
 ## Local layout
 
