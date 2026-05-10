@@ -111,6 +111,7 @@ Mihailescu).
 | 0010 | proof  | [Erdős 397 — bridge from gist `infinite_solutions` to upstream `erdos_397` signature](memory/0010-bridge-erdos-397.md) | shipped (local) |
 | 0011 | target | [Erdős 457 — Barreto/Aristotle's prime-divisor density result; minimal bridge needed](memory/0011-target-erdos-457.md) | go |
 | 0012 | proof  | [Erdős 457 — bridge from gist `erdos_457` to upstream `erdos_457` signature](memory/0012-bridge-erdos-457.md) | shipped (local) |
+| 0013 | infra  | [Bridge pipeline tracking — all (LEAN)+formalised Erdős candidates](memory/0013-infra-bridge-pipeline-tracking.md) | in-progress |
 
 ## Local layout
 
