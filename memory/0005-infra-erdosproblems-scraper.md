@@ -1,9 +1,8 @@
 # 0005 — Erdős-Problems scraper (Stage A, slice 1)
 
 **Kind:** infra
-**Status:** in-progress (full scrape running in background; this memo
-describes the script and intent; an `outcome` section will be filled in
-once it lands)
+**Status:** shipped (full scrape ran 17:55–18:11 UTC on 2026-05-10;
+JSONL written; sanity checks below pass)
 **Date:** 2026-05-10
 **Related:** 0002 (survey), `CLAUDE.md` "External resources" section
 **Code:** `scripts/scrape_erdosproblems.py`
@@ -111,29 +110,144 @@ Manual check against the live pages confirms each line. The fix
 for the "Create a formalisation here" false positive was caught by
 this very test.
 
-## Outcome (filled in after the full run lands)
+## Outcome
 
-*To be completed.*
+The full run finished cleanly: **1217 records, all live** (no
+missing-page placeholders — turns out 1217 is the highest current
+problem on erdosproblems.com). Reproducible with
+`python3 scripts/summarise_erdosproblems.py`.
 
-Expected fields in the outcome section, once the scrape finishes:
+### Status-label distribution
 
-- Total records fetched, count of `exists=true` vs `exists=false`.
-- Status-label breakdown (open / proved / disproved / disproved-lean / other).
-- `formalised_in_formal_conjectures` breakdown
-  (`True` / `False` / `null`), with a sanity check against the
-  number of files actually present under
-  `formal-conjectures/FormalConjectures/ErdosProblems/`.
-- Top tags by frequency (sanity: should mostly be combinatorics
-  and number theory).
-- A handful of cross-checks: e.g. for ten random sampled
-  formalised problems, confirm the linked `.lean` file exists in
-  our local clone.
-- Cross-reference against `Subsets/FC100SolvedSet1.lean` and
-  `Subsets/FC100OpenSet1.lean`: how many of the
-  `formalised_in_formal_conjectures=true` Erdős entries appear
-  in each benchmark slice.
+| Label              | Count |
+| ------------------ | ----- |
+| `OPEN`             | 632   |
+| `PROVED`           | 216   |
+| `PROVED (LEAN)`    | 104   |
+| `DISPROVED`        | 74    |
+| `SOLVED`           | 68    |
+| `DISPROVED (LEAN)` | 54    |
+| `FALSIFIABLE`      | 27    |
+| `SOLVED (LEAN)`    | 16    |
+| `DECIDABLE`        | 9     |
+| `VERIFIABLE`       | 7     |
+| `NOT DISPROVABLE`  | 4     |
+| `NOT PROVABLE`     | 3     |
+| `INDEPENDENT`      | 3     |
 
-## Lessons (pre-outcome)
+Open : non-open ≈ 632 : 585. The `(LEAN)` suffix appears on 174
+records — these are problems where erdosproblems.com knows a
+formal Lean proof exists *somewhere* (not necessarily upstream
+in `formal-conjectures` — sometimes a fork or a personal repo).
+A `(LEAN)` label on a candidate is a signal to **look up the
+linked proof** rather than re-prove.
+
+### Formalised in `formal-conjectures`
+
+| `formalised_in_formal_conjectures` | Count |
+| ---------------------------------- | ----- |
+| `True`                             | 413   |
+| `False`                            | 804   |
+
+The local clone has exactly **413** files under
+`FormalConjectures/ErdosProblems/*.lean`, matching the scrape's
+413 `True` entries with **zero discrepancies in either direction**
+(no scrape-says-formalised-but-no-local-file, no
+local-file-but-scrape-doesn't-flag-it). This is the strongest
+sanity check we get for free.
+
+### Top tags (sanity)
+
+```
+number theory                       576
+graph theory                        277
+ramsey theory                       119
+geometry                            108
+additive combinatorics              102
+analysis                            80
+primes                              62
+chromatic number                    61
+distances                           55
+unit fractions                      49
+combinatorics                       47
+set theory                          35
+sidon sets                          34
+divisors                            33
+hypergraphs                         32
+additive basis                      31
+arithmetic progressions             29
+polynomials                         26
+cycles                              24
+turan number                        23
+```
+
+This matches the AMS-attribute distribution we'd expect: number
+theory dominates, combinatorics in second, graph theory close
+behind.
+
+### Benchmark slice cross-reference
+
+| Slice              | Erdős ids | Open on EP | Solved on EP | All formalised? |
+| ------------------ | --------- | ---------- | ------------ | --------------- |
+| `FC100SolvedSet1`  | 43        | 28         | 15           | 43 / 43         |
+| `FC100OpenSet1`    | 46        | 43         |  3           | 46 / 46         |
+
+Note: the `FC100SolvedSet1` "Erdős ids" column counts erdosproblems.com
+**problem numbers** referenced from FC100SolvedSet1, not theorem
+declarations. Many of the 43 are research-open headlines whose
+`*.variants.*` solved sub-claims are what FC100SolvedSet1 actually
+benchmarks. The next slice (memo 0006) will catalogue at the
+declaration level so this column becomes "FC100SolvedSet1
+sorry-bearing variants by Erdős id" and we can target benchmark
+deltas precisely.
+
+### Goal-2 candidate pool, first cut
+
+Erdős problems where:
+
+- the statement is already formalised in `formal-conjectures`
+  (i.e. `FormalConjectures/ErdosProblems/<N>.lean` exists), AND
+- `erdosproblems.com/<N>` reports an informally-solved status
+  (`status_id == "solved"`), AND
+- the status label does **not** carry the `(LEAN)` suffix
+  (so the page does not yet know a formal Lean proof exists
+  anywhere)
+
+| Bucket | Count |
+| ------ | ----- |
+| SOLVED + formalised + **no Lean proof yet** (Goal-2 targets) | **48** |
+| SOLVED + formalised + page already cites a Lean proof (skip) | 53 |
+
+First 10 candidate ids:
+`4, 6, 13, 42, 48, 67, 69, 109, 139, 152`.
+
+This is the pool to filter further once we have the Lean-side
+catalogue (memo 0006) — a candidate qualifies as a Goal-2 *target*
+only if its `.lean` file still has at least one naked sorry on
+the headline statement or a `*.variants.*` declaration.
+
+### Caveats
+
+- **Problem-level granularity.** This catalogue is one record per
+  Erdős problem *number*, not per theorem declaration. The cambie
+  work was on `Erdos399.variants.cambie`, which is one of *four*
+  sorries inside `ErdosProblems/399.lean`. Erdős 399's page
+  status is `DISPROVED (LEAN)` because the headline is disproved
+  by Barfield's `10! = 48⁴ − 36⁴` (which the file proves inline
+  with `decide`). The variant-level structure is invisible at
+  this layer and only surfaces in the Lean-side catalogue.
+- **`(LEAN)` doesn't mean "linked here".** A page can be tagged
+  `PROVED (LEAN)` because someone formalised the proof in a
+  personal fork or a Mathematica-style gist; the link is on
+  the page text, not in our scrape's structured fields.
+  Following each link is per-target work in memo 0007.
+- **`erdosproblems.com` may be stale.** We treat it as
+  authoritative for "is this already solved informally?" but
+  not for "is this proof in `formal-conjectures` master right
+  now?" — the upstream Lean repo is authoritative for that, and
+  memo 0006 will be its scrape.
+
+## Lessons
 
 - The `<a href>`-disambiguation gotcha is a recurring class of
   bug in HTML scraping: any pattern like "the next anchor in
