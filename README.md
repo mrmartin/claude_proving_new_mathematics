@@ -104,6 +104,7 @@ Mihailescu).
 | 0003 | target | [`Erdos399.erdos_399.variants.cambie` — Cambie's mod-8 obstruction](memory/0003-target-erdos-399-variants-cambie.md) | go         |
 | 0004 | proof  | [`Erdos399.erdos_399.variants.cambie` — solving + known proof](memory/0004-proof-erdos-399-variants-cambie.md) | shipped (local) |
 | 0005 | infra  | [Erdős-Problems scraper (Stage A, slice 1)](memory/0005-infra-erdosproblems-scraper.md) | shipped     |
+| 0006 | infra  | [Lean-side Erdős catalogue (Stage A, slice 2)](memory/0006-infra-lean-side-erdos-catalogue.md) | shipped     |
 
 ## Local layout
 
