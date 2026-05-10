@@ -106,6 +106,7 @@ Mihailescu).
 | 0005 | infra  | [Erdős-Problems scraper (Stage A, slice 1)](memory/0005-infra-erdosproblems-scraper.md) | shipped     |
 | 0006 | infra  | [Lean-side Erdős catalogue (Stage A, slice 2)](memory/0006-infra-lean-side-erdos-catalogue.md) | shipped     |
 | 0007 | proof  | [Erdős 38 — reproducing the spicylemonade/Aristotle proof locally](memory/0007-proof-erdos-38.md) | shipped (local) |
+| 0008 | proof  | [Erdős 38 — bridge from `erdos_problem_38` to upstream `erdos_38` signature](memory/0008-bridge-erdos-38.md) | shipped (local) |
 
 ## Local layout
 
