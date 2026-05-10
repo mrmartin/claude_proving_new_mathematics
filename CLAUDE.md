@@ -147,11 +147,19 @@ the `claude-code-guide` agent is the right tool, not a web search.
    call. Don't narrate; the diff and the memo are the audit trail.
 4. **Open or update a memo for the current task.** See "Memory discipline"
    below. The memo is for *future you* — make it usable cold.
-5. **Commit early and often.** A working `lake build` plus an updated memo
-   is a checkpoint worth committing. The remote is
-   `git@github.com:mrmartin/claude_proving_new_mathematics.git`. Push only
-   when the user asks you to (default), or when an explicit task says
-   "push when done."
+5. **Commit and push after every addition.** Durable user
+   preference (2026-05-10): every time work produces a shippable
+   artifact — a new memo, an updated index entry, a working proof,
+   a doc edit — `git add` the touched files, commit with a focused
+   message, and `git push origin main` immediately. Do not batch:
+   small commits, one logical change each, pushed as they happen.
+   - Remote: `git@github.com:mrmartin/claude_proving_new_mathematics.git`.
+   - Never `git add -A`; stage explicit paths only.
+   - Never force-push or rewrite history without explicit ask.
+   - Pre-commit hook failures = fix the issue and create a *new*
+     commit; never `--amend` the failed one.
+   - Skipping this rule (e.g. "I'll commit later") is itself a
+     deviation worth flagging to the user.
 
 ---
 
