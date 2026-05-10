@@ -67,7 +67,7 @@ knows they were considered.
 | 434.i / 434.ii | – (forum thread) | forum-only | – | pending (URL needs scrape) |
 | 457  | 342 | Woett (Barreto/Aristotle) | – | **shipped 0011–0012** |
 | 541  | 3072 | plby v4.24.0 | – | pending |
-| 645  | 172 | plby v4.24.0 | – | pending |
+| 645  | 172 | plby v4.24.0 | – | **shipped 0015** |
 | 707  | 6359 | plby v4.24.0 | – | pending |
 | 728  | 6300 | plby v4.24.0 | – | pending |
 | 845  | 3024 | plby v4.24.0 | – | pending |
@@ -146,6 +146,7 @@ in this memo's `Lessons` section (TBD).
 | --- | --- | --- |
 | 2026-05-10 | 0007–0012 | #38, #397, #457 (3 / ~30) |
 | 2026-05-10 | 0014 | + #198 (4 / ~30) |
+| 2026-05-10 | 0015 | + #645 (5 / ~30) |
 
 (Updated as bridges ship.)
 
