@@ -116,6 +116,7 @@ Mihailescu).
 | 0015 | proof  | [Erdős 645 — bridge for plby/Alexeev's Brown-Landman 3-AP-with-large-gap](memory/0015-bridge-erdos-645.md) | shipped (local) |
 | 0016 | proof  | [Erdős 370 — bridge for plby/Alexeev's `(k!+3)²-1` max-prime-factor construction](memory/0016-bridge-erdos-370.md) | shipped (local) |
 | 0017 | proof  | [Erdős 1043 — bridge for Pommerenke's monic-polynomial level-set counterexample](memory/0017-bridge-erdos-1043.md) | shipped (local) |
+| 0018 | proof  | [Erdős 259 — bridge for ster-oc's Chen-Ruzsa irrational Möbius series](memory/0018-bridge-erdos-259.md) | shipped (local) |
 
 ## Local layout
 

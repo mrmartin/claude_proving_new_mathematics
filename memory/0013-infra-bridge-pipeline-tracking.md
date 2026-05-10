@@ -44,17 +44,17 @@ knows they were considered.
 | # | Lines | Source | Predicate-match? | State |
 | ---:|---:| --- | --- | --- |
 | 38   | 1852 (Aristotle / Del-Vecchio) | gist `madeve-unipi` | partial — bridge built explicit construction | **shipped 0007–0008** |
-| 26   | 499 | plby v4.24.0 | local `IsThick`/`IsBehrend`; upstream uses similar but separate defs | pending |
-| 56   | 1350 | plby v4.24.0 | local `WeaklyDivisible`/`MaxWeaklyDivisible`; upstream uses upstream `WeaklyDivisible` | pending |
+| 26   | 499 | plby v4.24.0 | local `IsThick`/`IsBehrend`; upstream uses similar but separate defs | **blocked: source mismatch** — plby file proves `erdos_26.variants.rusza` (non-thick counterexample) NOT `erdos_26`. Upstream `formal_proof using lean4` annotation appears to be a cataloguing error. |
+| 56   | 1350 | plby v4.24.0 | local `WeaklyDivisible`/`MaxWeaklyDivisible`; upstream uses upstream `WeaklyDivisible` | **blocked**: gist uses `native_decide` ×7 (banned). |
 | 189  | 607 | plby v4.24.0 | Euclidean rectangles in `ℝ²` | pending |
 | 194  | 617 | gist `ster-oc` | local defs | pending |
 | 198  | 161 | plby v4.24.0 | local `IsSidon`/`IsAPOfLength` ↔ upstream FCM defs (equivalent on ℕ) | **shipped 0014** |
 | 204  | 947 | Woett `Lean-files` | covering systems on ℤ | pending |
 | 229  | 1603 | plby v4.24.0 | – | pending |
 | 258  | 353 (gist `ster-oc` v4.28.0) | – | **disqualified** — uses `axiom tao_teravainen` |
-| 259  | 1012 | gist `ster-oc` | – | pending |
+| 259  | 1012 | gist `ster-oc` | – | **shipped 0018** |
 | 268  | 1297 | gist `madeve-unipi` | – | pending |
-| 275  | 578 | plby v4.24.0 | – | pending |
+| 275  | 578 | plby v4.24.0 | – | **blocked**: v4.24.0 → v4.28.0 drift on `Finset.card_image_le` ↔ `List.length` cross-comparison (gist's tactic chain doesn't elaborate; needs nontrivial rewrite). |
 | 303  | 1702 (forum thread) | forum-only; not a direct file | – | pending (URL needs scrape) |
 | 331  | 0 (Woett URL 404) | – | – | pending (URL needs fixup) |
 | 347  | 2180 | ebarschkis | – | pending |
@@ -62,7 +62,7 @@ knows they were considered.
 | 370  | 190 | plby v4.24.0 | – | **shipped 0016** |
 | 392  | 3180 | AlexKontorovich `PrimeNumberTheoremAnd` | multi-file project; may need subset extraction | pending |
 | 397  | 101 (gist `llllvvuu`) | – | – | **shipped 0009–0010** |
-| 418  | 560 | plby v4.24.0 | – | pending |
+| 418  | 560 | plby v4.24.0 | – | **blocked**: gist uses `native_decide` ×13 (banned per `CLAUDE.md`; would introduce `Lean.ofReduceBool` axiom). |
 | 427  | 91 (gist `JohnEdwardJennings`) | – | **disqualified** — uses `axiom shiu_consecutive_primes` |
 | 434.i / 434.ii | – (forum thread) | forum-only | – | pending (URL needs scrape) |
 | 457  | 342 | Woett (Barreto/Aristotle) | – | **shipped 0011–0012** |
@@ -149,6 +149,7 @@ in this memo's `Lessons` section (TBD).
 | 2026-05-10 | 0015 | + #645 (5 / ~30) |
 | 2026-05-10 | 0016 | + #370 (6 / ~30) |
 | 2026-05-10 | 0017 | + #1043 (7 / ~30) |
+| 2026-05-10 | 0018 | + #259 (8 / ~30) |
 
 (Updated as bridges ship.)
 
