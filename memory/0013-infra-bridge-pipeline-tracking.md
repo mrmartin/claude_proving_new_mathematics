@@ -73,7 +73,7 @@ knows they were considered.
 | 845  | 3024 | plby v4.24.0 | – | pending |
 | 897.i / 897.ii | 947 | plby v4.24.0 | multi-part | pending |
 | 997  | 220 (gist `pitmonticone` v4.28.0) | – | **disqualified** — uses `axiom maynardTaoBFT` |
-| 1043 | 225 | plby v4.24.0 | – | pending |
+| 1043 | 225 | plby v4.24.0 | – | **shipped 0017** |
 | 1051 | 1702 (forum thread) | forum-only | – | pending (URL needs scrape) |
 | 1067 | 2510 | plby v4.24.0 | – | pending |
 | 1071.i | 3079 | plby v4.24.0 | – | pending |
@@ -148,6 +148,7 @@ in this memo's `Lessons` section (TBD).
 | 2026-05-10 | 0014 | + #198 (4 / ~30) |
 | 2026-05-10 | 0015 | + #645 (5 / ~30) |
 | 2026-05-10 | 0016 | + #370 (6 / ~30) |
+| 2026-05-10 | 0017 | + #1043 (7 / ~30) |
 
 (Updated as bridges ship.)
 
