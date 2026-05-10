@@ -59,7 +59,7 @@ knows they were considered.
 | 331  | 0 (Woett URL 404) | – | – | pending (URL needs fixup) |
 | 347  | 2180 | ebarschkis | – | pending |
 | 355  | 3834 | Woett | – | pending |
-| 370  | 190 | plby v4.24.0 | – | pending |
+| 370  | 190 | plby v4.24.0 | – | **shipped 0016** |
 | 392  | 3180 | AlexKontorovich `PrimeNumberTheoremAnd` | multi-file project; may need subset extraction | pending |
 | 397  | 101 (gist `llllvvuu`) | – | – | **shipped 0009–0010** |
 | 418  | 560 | plby v4.24.0 | – | pending |
@@ -147,6 +147,7 @@ in this memo's `Lessons` section (TBD).
 | 2026-05-10 | 0007–0012 | #38, #397, #457 (3 / ~30) |
 | 2026-05-10 | 0014 | + #198 (4 / ~30) |
 | 2026-05-10 | 0015 | + #645 (5 / ~30) |
+| 2026-05-10 | 0016 | + #370 (6 / ~30) |
 
 (Updated as bridges ship.)
 

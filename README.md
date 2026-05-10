@@ -114,6 +114,7 @@ Mihailescu).
 | 0013 | infra  | [Bridge pipeline tracking — all (LEAN)+formalised Erdős candidates](memory/0013-infra-bridge-pipeline-tracking.md) | in-progress |
 | 0014 | proof  | [Erdős 198 — bridge for plby/Alexeev's AlphaProof Sidon-set construction](memory/0014-bridge-erdos-198.md) | shipped (local) |
 | 0015 | proof  | [Erdős 645 — bridge for plby/Alexeev's Brown-Landman 3-AP-with-large-gap](memory/0015-bridge-erdos-645.md) | shipped (local) |
+| 0016 | proof  | [Erdős 370 — bridge for plby/Alexeev's `(k!+3)²-1` max-prime-factor construction](memory/0016-bridge-erdos-370.md) | shipped (local) |
 
 ## Local layout
 
