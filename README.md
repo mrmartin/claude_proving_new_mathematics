@@ -18,15 +18,29 @@ to. Read it first if you are picking this project up cold.
 
 ## Goals
 
-1. **Phase 1 — formalize known proofs.** Convert `:= by sorry` placeholders
-   in `formal-conjectures` into short Lean proofs (≤ 25–50 lines) when the
-   informal proof already exists in the literature.
-2. **Phase 2 — new mathematics.** Once Phase 1 is producing merged PRs,
-   attack genuinely open problems where Claude's mathlib search and tactic
-   enumeration give us a real shot.
+1. **Phase 1 — solving with known proofs.** Take a `:= by sorry` whose
+   informal proof already exists in the literature, and write a short
+   Lean version (≤ 25–50 lines).
+2. **Phase 2 — solving with new proofs.** Genuinely open problems where
+   Claude's mathlib search and tactic enumeration give us a real shot.
+   Deferred until Phase 1 has produced merged PRs.
 
 We are not chasing low-hanging fruit (pure `decide` testcases, restatement
-PRs) or Fields-medal headlines (Goldbach, Riemann, Beal, Apéry, Mihailescu).
+PRs, *defining* PRs that just add new sorries) or Fields-medal headlines
+(Goldbach, Riemann, Beal, Apéry, Mihailescu).
+
+### A taxonomy worth being precise about
+
+`formal-conjectures` accepts two distinct kinds of work that look similar
+from a distance, and within each, two further kinds:
+
+|                          | **Defining (statement only)** | **Solving (filling a sorry)** |
+| ------------------------ | ----------------------------- | ----------------------------- |
+| **Known informal proof** | Most `good first issue` tickets — pick a literature conjecture, write its Lean statement, ship `:= by sorry`. | **Phase 1 here.** Translate a literature proof into Lean. |
+| **No known proof**       | Defining a still-open conjecture. The bulk of `category research open` files. | **Phase 2 here.** Proving an open conjecture. New mathematics. |
+
+`CLAUDE.md` enforces these distinctions on every memo and PR.
+We never describe Phase 1 work as "proving new mathematics."
 
 ## Memory index
 
@@ -34,6 +48,8 @@ PRs) or Fields-medal headlines (Goldbach, Riemann, Beal, Apéry, Mihailescu).
 | ---- | ------ | -------------------------------------------------------------------- | ---------- |
 | 0001 | setup  | [Lean 4 + mathlib bootstrap and 1+1=2](memory/0001-setup-lean4-mathlib-bootstrap-1plus1.md) | shipped    |
 | 0002 | survey | [`formal-conjectures` repo: structure, conventions, attack vectors](memory/0002-survey-formal-conjectures-repo.md) | shipped    |
+| 0003 | target | [`Erdos399.erdos_399.variants.cambie` — Cambie's mod-8 obstruction](memory/0003-target-erdos-399-variants-cambie.md) | go         |
+| 0004 | proof  | [`Erdos399.erdos_399.variants.cambie` — solving + known proof](memory/0004-proof-erdos-399-variants-cambie.md) | shipped (local) |
 
 ## Local layout
 

@@ -12,23 +12,68 @@ mathematics.
 
 ---
 
+## Vocabulary — be precise about which kind of work
+
+`formal-conjectures` mixes several activities that look similar from a
+distance but are not. Always classify the work along **two orthogonal
+axes** before picking it up.
+
+**Axis 1 — Defining vs. Solving.**
+
+- **Defining the problem in Lean 4.** Writing a Lean statement of a
+  problem and shipping it with `:= by sorry` plus sanity-check tests.
+  Most `good first issue` tickets and most upstream issues (e.g.
+  `#710` for Erdős 399) close when *the file with the statement
+  exists* — they do **not** require a proof. The deliverable is a
+  faithful Lean translation of the informal statement.
+- **Solving the problem.** Replacing a `:= by sorry` with a real
+  Lean proof. The deliverable is a working proof in the upstream-cap
+  budget (≤ 25–50 lines inline, or longer in a companion repo with a
+  `formal_proof using lean4 at "..."` link). This is a separate PR from
+  the defining one and never closes the original `defining` issue.
+
+**Axis 2 — Writing up a known proof vs. Coming up with a new proof.**
+
+- **Writing up a known proof.** The mathematical proof already exists
+  somewhere — a paper, textbook, classical result, even a forum
+  comment. Our work is *translation into Lean*. Mathematical
+  originality is zero; formalization-engineering value is real.
+- **Coming up with a proof hitherto unknown.** Proving something
+  where no informal proof yet exists in the literature. This is
+  *new mathematics*. It is much harder, much rarer, and we treat
+  it accordingly.
+
+**The 2×2 we sit in:**
+
+|                          | **Defining (statement only)** | **Solving (filling a sorry)** |
+| ------------------------ | ----------------------------- | ----------------------------- |
+| **Known informal proof** | Many `good first issue` tickets — pick a known conjecture from a list, write its Lean statement, ship `:= by sorry`. | **Phase 1 of this project.** Take a sorry whose informal proof is in the literature and write a Lean version. |
+| **No known proof**       | Defining a genuinely open conjecture. The headline `category research open` files in the repo. | **Phase 2 of this project.** Proving an open conjecture. Out of reach until Phase 1 has produced merged PRs. |
+
+Always classify the target before starting. Memos must say *which
+cell* the work falls in. Never describe Phase 1 work as "proving new
+mathematics" — that conflates known-proof formalisation with novel
+proof creation.
+
 ## Goals (in order)
 
-1. **Phase 1 — formalize known proofs.** Take theorems in
-   `google-deepmind/formal-conjectures` that are currently `:= by sorry` and
-   whose informal proofs already exist in the literature, and turn them into
-   short (≤ 25–50 line) Lean proofs. Prefer `category research solved`,
-   `category textbook`, `category test`, and `category API` problems. Avoid
-   `category research open` unless we are proving a clearly elementary
-   variant.
-2. **Phase 2 — new mathematics.** Once we have a track record and a feel for
-   the repo's review bar, attack genuinely open problems where Claude's
-   strengths (mathlib search, definitional bookkeeping, tactic enumeration)
-   give us a real shot. Until then, we do not pretend Phase 2 work.
+1. **Phase 1 — solving with known proofs.** Lower-right cell:
+   replace `:= by sorry` placeholders in `formal-conjectures` whose
+   informal proofs already exist in the literature with short
+   (≤ 25–50 line) Lean proofs. Prefer `category research solved`,
+   `category textbook`, `category test`, and `category API`. Avoid
+   `category research open` unless the variant is a known classical
+   result.
+2. **Phase 2 — solving with new proofs.** Lower-left cell:
+   genuinely open problems where Claude's strengths (mathlib search,
+   definitional bookkeeping, tactic enumeration) give us a real shot.
+   We do not pretend Phase 2 work until Phase 1 has produced merged
+   PRs.
 
-We do **not** chase low-hanging fruit (pure `decide` testcase PRs, trivial
-restatements, metadata-only PRs). We do **not** chase Fields-medal-level
-problems where the informal proof is itself a research paper we cannot reach.
+We do **not** chase low-hanging fruit (pure `decide` testcase PRs,
+trivial restatements, metadata-only PRs, *defining* PRs that just
+add new sorries). We do **not** chase Fields-medal-level problems
+where the informal proof is itself a research paper we cannot reach.
 
 ---
 
@@ -214,22 +259,29 @@ This is the strategy worked out in the founding session and ratified by
 the user (memo `0002-survey-formal-conjectures-repo.md` records the full
 analysis):
 
-1. We start in **Phase 1** — proving existing sorries inline. Targets are
-   chosen from `category research solved`, `category textbook`, `category
-   test`, and `category API` files. We prefer the `Subsets/FC100SolvedSet1`
-   list because every proof there directly improves the published
-   benchmark.
+1. We start in **Phase 1** — *solving with known proofs*. Targets are
+   `:= by sorry` placeholders in `category research solved`,
+   `category textbook`, `category test`, and `category API` files
+   whose informal proof already exists in the literature. We prefer
+   the `Subsets/FC100SolvedSet1` list because every proof there
+   directly improves the published benchmark.
 2. We avoid `native_decide`, deep paper-only proofs, and anything that
    needs new ForMathlib API beyond what we can build in the same PR.
-3. Each target gets a `target-...` memo first. The memo has the informal
-   proof sketch, the mathlib lemmas we expect to need, an estimated line
-   budget, and a go/no-go verdict. We do not start proving until the
-   target memo exists.
-4. After a successful proof, we write a `proof-...` memo with the final
-   tactic listing and the axiom-check output. After a failed attempt, we
-   write a `fail-...` memo.
-5. Phase 2 (genuinely new mathematics) only begins after at least one
-   merged PR has shown the workflow scales.
+3. Each target gets a `target-...` memo first. The memo states **which
+   cell of the defining/solving × known/unknown 2×2 the work falls
+   in**, the informal proof sketch, the mathlib lemmas we expect to
+   need, an estimated line budget, and a go/no-go verdict. We do not
+   start proving until the target memo exists.
+4. After a successful proof, we write a `proof-...` memo with the
+   final tactic listing, the axiom-check output, and (importantly)
+   an honest note distinguishing *what was already in the literature*
+   from *what was new in this PR*. For Phase 1 work that note is
+   "the proof was already known; this PR is the formal translation."
+5. After a failed attempt, we write a `fail-...` memo.
+6. Phase 2 (*solving with new proofs* — genuine new mathematics)
+   only begins after at least one merged Phase 1 PR has shown the
+   workflow scales. PR descriptions, commit messages, and memos
+   must never claim Phase 2 originality for Phase 1 work.
 
 **Working principles for new mathematics, when we get there:**
 
