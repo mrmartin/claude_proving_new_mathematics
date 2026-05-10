@@ -112,6 +112,7 @@ Mihailescu).
 | 0011 | target | [Erdős 457 — Barreto/Aristotle's prime-divisor density result; minimal bridge needed](memory/0011-target-erdos-457.md) | go |
 | 0012 | proof  | [Erdős 457 — bridge from gist `erdos_457` to upstream `erdos_457` signature](memory/0012-bridge-erdos-457.md) | shipped (local) |
 | 0013 | infra  | [Bridge pipeline tracking — all (LEAN)+formalised Erdős candidates](memory/0013-infra-bridge-pipeline-tracking.md) | in-progress |
+| 0014 | proof  | [Erdős 198 — bridge for plby/Alexeev's AlphaProof Sidon-set construction](memory/0014-bridge-erdos-198.md) | shipped (local) |
 
 ## Local layout
 

@@ -48,7 +48,7 @@ knows they were considered.
 | 56   | 1350 | plby v4.24.0 | local `WeaklyDivisible`/`MaxWeaklyDivisible`; upstream uses upstream `WeaklyDivisible` | pending |
 | 189  | 607 | plby v4.24.0 | Euclidean rectangles in `ℝ²` | pending |
 | 194  | 617 | gist `ster-oc` | local defs | pending |
-| 198  | 161 | plby v4.24.0 | local `IsSidon`/`IsAPOfLength` ↔ upstream FCM defs (equivalent on ℕ) | **in progress** |
+| 198  | 161 | plby v4.24.0 | local `IsSidon`/`IsAPOfLength` ↔ upstream FCM defs (equivalent on ℕ) | **shipped 0014** |
 | 204  | 947 | Woett `Lean-files` | covering systems on ℤ | pending |
 | 229  | 1603 | plby v4.24.0 | – | pending |
 | 258  | 353 (gist `ster-oc` v4.28.0) | – | **disqualified** — uses `axiom tao_teravainen` |
@@ -145,6 +145,7 @@ in this memo's `Lessons` section (TBD).
 | Date | Memo range | Done so far |
 | --- | --- | --- |
 | 2026-05-10 | 0007–0012 | #38, #397, #457 (3 / ~30) |
+| 2026-05-10 | 0014 | + #198 (4 / ~30) |
 
 (Updated as bridges ship.)
 
