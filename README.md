@@ -109,6 +109,7 @@ Mihailescu).
 | 0008 | proof  | [Erdős 38 — bridge from `erdos_problem_38` to upstream `erdos_38` signature](memory/0008-bridge-erdos-38.md) | shipped (local) |
 | 0009 | target | [Erdős 397 — Wu/Aristotle disproof of "finitely many central-binomial collisions"](memory/0009-target-erdos-397.md) | go |
 | 0010 | proof  | [Erdős 397 — bridge from gist `infinite_solutions` to upstream `erdos_397` signature](memory/0010-bridge-erdos-397.md) | shipped (local) |
+| 0011 | target | [Erdős 457 — Barreto/Aristotle's prime-divisor density result; minimal bridge needed](memory/0011-target-erdos-457.md) | go |
 
 ## Local layout
 
