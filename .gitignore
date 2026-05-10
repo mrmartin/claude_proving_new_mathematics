@@ -1,0 +1,16 @@
+# Lake build artifacts (per-project)
+.lake/
+build/
+*.olean
+*.ilean
+*.trace
+
+# Editor / OS noise
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# Upstream clone — present locally but tracked separately
+formal-conjectures/

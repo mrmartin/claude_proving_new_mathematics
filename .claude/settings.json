@@ -1,0 +1,14 @@
+{
+  "enabledPlugins": {
+    "lean4@lean4-skills": true,
+    "lean4-contribute@lean4-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "lean4-skills": {
+      "source": {
+        "source": "github",
+        "repo": "cameronfreer/lean4-skills"
+      }
+    }
+  }
+}
