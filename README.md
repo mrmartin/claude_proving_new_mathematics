@@ -123,6 +123,8 @@ Mihailescu).
 | 0022 | fail   | [Erdős 1113 `.infinitely_many_sierpinski`: misclassified — parent problem is OPEN on erdosproblems.com](memory/0022-fail-erdos-1113-misclassified-open-parent.md) | abandoned (off-target) |
 | 0023 | target | [Erdős 1148 `.variants.weaker` — `n = x²+y²-z²` with slack `2√n`](memory/0023-target-erdos-1148-weaker.md) | go |
 | 0024 | proof  | [Erdős 1148 `.variants.weaker` — Goal-2 four-case construction](memory/0024-proof-erdos-1148-weaker.md) | shipped (local) |
+| 0025 | target | [Erdős 613 (parent, disproved) — Tao's n=5 Pikhurko counterexample](memory/0025-target-erdos-613.md) | go |
+| 0026 | proof  | [Erdős 613 — bridge for Tao's `PikhurkoN5.red_triangle_of_no_blue_star`](memory/0026-proof-erdos-613-bridge.md) | shipped (local) |
 
 ## Local layout
 

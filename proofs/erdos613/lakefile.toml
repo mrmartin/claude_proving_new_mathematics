@@ -1,0 +1,12 @@
+name = "erdos613"
+version = "0.1.0"
+defaultTargets = ["Erdos613"]
+[leanOptions]
+pp.unicode.fun = true
+maxHeartbeats = 800000
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.28.0"
+[[lean_lib]]
+name = "Erdos613"
