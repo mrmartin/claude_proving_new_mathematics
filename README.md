@@ -129,6 +129,8 @@ Mihailescu).
 | 0028 | proof  | [Erdős 499 — bridge for plby/Aristotle's Marcus-Minc proof](memory/0028-proof-erdos-499-bridge.md) | shipped (local) |
 | 0029 | target | [Erdős 26 `.variants.rusza` — Ruzsa's counterexample via plby/Aristotle](memory/0029-target-erdos-26-rusza.md) | go |
 | 0030 | proof  | [Erdős 26 `.variants.rusza` — bridge for plby/Aristotle's Ruzsa proof](memory/0030-proof-erdos-26-rusza-bridge.md) | shipped (local) |
+| 0031 | target | [Erdős 64 (Erdős–Gyárfás, OPEN, $1000) — three-track attack plan](memory/0031-target-erdos-64.md) | in-progress |
+| 0032 | infra  | [Erdős 64 project skeleton + `Basic.lean`](memory/0032-infra-erdos64-skeleton.md) | shipped (local) |
 
 ## Local layout
 
