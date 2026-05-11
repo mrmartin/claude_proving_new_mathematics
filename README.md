@@ -127,6 +127,8 @@ Mihailescu).
 | 0026 | proof  | [Erdős 613 — bridge for Tao's `PikhurkoN5.red_triangle_of_no_blue_star`](memory/0026-proof-erdos-613-bridge.md) | shipped (local) |
 | 0027 | target | [Erdős 499 (parent, SOLVED) — Marcus-Minc 1962 via plby/Aristotle](memory/0027-target-erdos-499.md) | go |
 | 0028 | proof  | [Erdős 499 — bridge for plby/Aristotle's Marcus-Minc proof](memory/0028-proof-erdos-499-bridge.md) | shipped (local) |
+| 0029 | target | [Erdős 26 `.variants.rusza` — Ruzsa's counterexample via plby/Aristotle](memory/0029-target-erdos-26-rusza.md) | go |
+| 0030 | proof  | [Erdős 26 `.variants.rusza` — bridge for plby/Aristotle's Ruzsa proof](memory/0030-proof-erdos-26-rusza-bridge.md) | shipped (local) |
 
 ## Local layout
 
