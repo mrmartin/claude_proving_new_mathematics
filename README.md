@@ -137,6 +137,7 @@ Mihailescu).
 | 0036 | proof  | [Erdős 64 `BipartiteCubic.lean`: bipartite girth ∈ {4, 8} cases](memory/0036-proof-erdos64-bipartite-cubic-partial.md) | shipped (local, partial) |
 | 0037 | target | [Erdős 64 A3 — diameter-2 (Carr 2026): setup + statement, body deferred](memory/0037-target-erdos64-diam-two.md) | partial (statement + helper) |
 | 0038 | proof  | [Erdős 64 A4 — `Markstrom.lean`: Petersen graph verified](memory/0038-proof-erdos64-petersen.md) | shipped (local) |
+| 0039 | infra  | [Erdős 64 B1 — `Search/check_cubic.py`: 11 named cubic graphs pass](memory/0039-infra-erdos64-search-b1.md) | shipped (B1.0; full pipeline needs nauty/SAT) |
 
 ## Local layout
 
