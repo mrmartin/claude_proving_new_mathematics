@@ -138,7 +138,7 @@ Mihailescu).
 | 0037 | target | [Erdős 64 A3 — diameter-2 (Carr 2026): setup + statement, body deferred](memory/0037-target-erdos64-diam-two.md) | partial (statement + helper) |
 | 0038 | proof  | [Erdős 64 A4 — `Markstrom.lean`: Petersen graph verified](memory/0038-proof-erdos64-petersen.md) | shipped (local) |
 | 0039 | infra  | [Erdős 64 B1 — `Search/check_cubic.py`: 11 named cubic graphs pass](memory/0039-infra-erdos64-search-b1.md) | shipped (B1.0; full pipeline needs nauty/SAT) |
-| 0040 | result | [Erdős 64 B1 — exhaustive `n ≤ 18` (all 45 974 connected cubic graphs pass)](memory/0040-result-erdos64-b1-up-to-n18.md) | shipped (local) |
+| 0040 | result | [Erdős 64 B1 — exhaustive `n ≤ 20` (all 556 463 connected cubic graphs pass)](memory/0040-result-erdos64-b1-up-to-n20.md) | shipped (local) |
 
 ## Local layout
 
