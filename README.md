@@ -132,6 +132,8 @@ Mihailescu).
 | 0031 | target | [Erdős 64 (Erdős–Gyárfás, OPEN, $1000) — three-track attack plan](memory/0031-target-erdos-64.md) | in-progress |
 | 0032 | infra  | [Erdős 64 project skeleton + `Basic.lean`](memory/0032-infra-erdos64-skeleton.md) | shipped (local) |
 | 0033 | proof  | [Erdős 64 `WarmUp.lean`: K₄, K₃,₃, 3-prism each have a 4-cycle](memory/0033-proof-erdos64-warmup.md) | shipped (local) |
+| 0034 | proof  | [Erdős 64 `Bipartite.lean`: bipartite graphs have no odd cycle](memory/0034-proof-erdos64-bipartite-no-odd-cycle.md) | shipped (local) |
+| 0035 | idea   | [Erdős 64 — `girth ≤ 2·diam+1` deferred (needs closed-walk → cycle helper)](memory/0035-idea-erdos64-girth-diam-deferred.md) | deferred |
 
 ## Local layout
 
