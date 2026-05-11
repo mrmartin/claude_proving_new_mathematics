@@ -117,6 +117,7 @@ Mihailescu).
 | 0016 | proof  | [Erdős 370 — bridge for plby/Alexeev's `(k!+3)²-1` max-prime-factor construction](memory/0016-bridge-erdos-370.md) | shipped (local) |
 | 0017 | proof  | [Erdős 1043 — bridge for Pommerenke's monic-polynomial level-set counterexample](memory/0017-bridge-erdos-1043.md) | shipped (local) |
 | 0018 | proof  | [Erdős 259 — bridge for ster-oc's Chen-Ruzsa irrational Möbius series](memory/0018-bridge-erdos-259.md) | shipped (local) |
+| 0019 | proof  | [Erdős 1051 — bridge for van Doorn–Tao series irrationality (ℕ→ℤ container)](memory/0019-bridge-erdos-1051.md) | shipped (local) |
 
 ## Local layout
 

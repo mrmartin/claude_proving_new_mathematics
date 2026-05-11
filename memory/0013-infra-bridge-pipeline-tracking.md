@@ -74,7 +74,7 @@ knows they were considered.
 | 897.i / 897.ii | 947 | plby v4.24.0 | multi-part | **blocked**: 7+ v4.24.0 → v4.28.0 drift errors (`.not_le` projection gone, `No goals to be solved`, type mismatches). |
 | 997  | 220 (gist `pitmonticone` v4.28.0) | – | **disqualified** — uses `axiom maynardTaoBFT` |
 | 1043 | 225 | plby v4.24.0 | – | **shipped 0017** |
-| 1051 | 803 (decoded from forum) | forum live.lean `codez=` payload | – | **decoded + bridge-substantive**: gist compiles after one trivial drift fix (`; ring` after `norm_num`). Signature mismatch: gist takes `a : ℕ → ℕ` with `0 < a n` + `2 ≤ a n` after the liminf > 1; upstream takes `a : ℕ → ℤ` with `StrictMono a` + `GrowthCondition a`. Bridge requires: (i) tail-truncation `b n := (a (n + N₀)).toNat`; (ii) shifted-liminf > 1; (iii) `ErdosSeries a = rational_prefix + ∑' n, 1/(b n · b(n+1))`; (iv) `Irrational (ℚ + Irrational)`. ≈80 lines of bridge — doable but exceeds per-bridge budget. Gist + drift fix preserved at `proofs/erdos1051/Erdos1051/Proof.lean` (deleted after this reassessment; not committed). |
+| 1051 | 803 (decoded from forum) | forum live.lean `codez=` payload | – | **shipped 0019** — 110-line bridge closes the ℕ→ℤ container gap via tail-truncation `b m := (a (m+N₀)).toNat`, the gist's own `erdos_1051_liminf_shift_pow` helper for the shifted liminf > 1, `Summable.sum_add_tsum_nat_add` decomposition, and `Irrational.ratCast_add` for the final rational+irrational. |
 | 1067 | 2510 | plby v4.24.0 | – | **blocked-bridge-complex**: gist uses local `uncountably_chromatic`, `finite_independent_paths`, `Set.Iio (Ordinal.omega 1)` colorings; upstream uses `G.chromaticCardinal = ℵ_ 1` + `G.Subgraph` + `InfinitelyConnected`. Predicate translation ≈ 100+ lines. Gist itself compiles after one drift fix (`add_le_add_right` arg order). |
 | 1071.i | 3079 | plby v4.24.0 | – | **untested** — large; gist proves `Theorem_1`, `Corollary_2`, `Corollary_3` but upstream signature uses `Maximal (fun T : Finset (ℝ² × ℝ²) => …)` shape — bridge gap nontrivial. |
 | 1071.ii | 5385 | plby v4.24.0 | – | **untested** — gist proves `∃ S, IsMaximalDisjointCollection S UnitSquare ∧ Set.Finite S`; bridge gap to upstream's Maximal-over-Finset shape. |
@@ -150,6 +150,7 @@ in this memo's `Lessons` section (TBD).
 | 2026-05-10 | 0016 | + #370 (6 / ~30) |
 | 2026-05-10 | 0017 | + #1043 (7 / ~30) |
 | 2026-05-10 | 0018 | + #259 (8 / ~30) |
+| 2026-05-11 | 0019 | + #1051 (9 / ~30) |
 
 ### Final tally (2026-05-10)
 
