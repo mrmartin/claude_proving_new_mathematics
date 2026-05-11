@@ -94,6 +94,36 @@ ignore.**
      this and it removes the 25–50-line ceiling without violating
      their rules.
 
+   **HARD GATING RULE — main-problem status, not variant status.**
+   For any candidate from `FormalConjectures/ErdosProblems/N.lean`,
+   the very first check before opening a target memo is the status
+   of the *main problem* on `erdosproblems.com/N`:
+   - If `erdosproblems.com/N` reports **OPEN** → the entire file is
+     off-limits for Goal 2, *including any `variants.*` declaration
+     inside it whose specific sub-statement has a known proof*. We
+     do not work on solved subproblems of open Erdős problems —
+     that work doesn't advance our Goal 2 KPI and is easy to
+     mis-describe as "solving an Erdős problem" when it doesn't.
+   - If `erdosproblems.com/N` reports **SOLVED** or **DISPROVED**
+     → the file is in-scope for Goal 2. Pick the right variant.
+   - If `erdosproblems.com/N` reports **OPEN** but a variant has a
+     known proof → it may still be Goal-3-adjacent (a partial result
+     on an open problem), but only if the variant is itself novel
+     enough to write up; if the variant was solved long ago by a
+     classical theorem it is *neither* Goal 2 nor Goal 3 for us.
+   For non-Erdős files (`OeisA…`, `Mathoverflow/…`, `Paper/…`,
+   `Wikipedia/…`, etc.), apply the analogous status check against
+   the natural external source before targeting.
+
+   Past misclassifications under this rule (do not repeat):
+   - Erdős 1113 (Sierpiński numbers): `erdosproblems.com/1113` is
+     OPEN (smallest-Sierpiński question, "Seventeen or Bust"). The
+     `infinitely_many_sierpinski` variant has Sierpiński's 1960
+     proof but is off-limits because the parent is open. See memo
+     `0022`.
+   - Erdős 1054 (Schmerl): `f 2 = 0` is a definitional triviality
+     in the upstream Lean encoding, not a solution. See memo `0020`.
+
 3. **Goal 3 — Solve unsolved formalised problems.** Lower-left
    cell: a sorry whose proof exists *nowhere* — neither inline,
    nor linked, nor in any informal source we can find. Produce a
@@ -391,6 +421,15 @@ all (Goal 3 territory).
   `erdosproblems.com/869` for `Erdos869.*`. The numeric suffix in
   upstream filenames (`FormalConjectures/ErdosProblems/N.lean`)
   matches exactly.
+
+  **First action on any new candidate: `WebFetch erdosproblems.com/N`.**
+  Read the status line. If it says OPEN, the whole file is
+  off-limits for Goal 2 — every variant, every `.variants.*`
+  sub-statement, regardless of whether someone published a proof
+  of the specific variant. See the "HARD GATING RULE" under
+  Goal 2 above. Repeat misses of this check have wasted shipped
+  work twice (memos `0020`, `0022`); the check is now mandatory
+  before any other lookup.
 - **`https://oeis.org/A<NNN>`** — OEIS for any `OeisA<NNN>` file
   in the repo. Useful for sequence-based conjectures, with
   references and known formulae.
