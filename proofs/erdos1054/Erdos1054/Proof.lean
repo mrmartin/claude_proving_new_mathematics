@@ -1,15 +1,27 @@
 /-
-Goal-2 contribution to Erdős Problem 1054 (https://www.erdosproblems.com/1054):
-prove that the function `f n = min m s.t. n = sum of k smallest divisors of m
-for some k ≥ 1` is undefined (junk value 0) at `n = 2`.
+**Caveat.** This file proves `Erdos1054.f_undefined_at_2 : f 2 = 0`. That is
+a *Lean-encoding sanity check*, not a solution to Erdős Problem 1054. The
+real problem (https://www.erdosproblems.com/1054) is the OPEN question
 
-Mathematical argument: the sum `∑_{i<k} nth (· ∈ divisors m) i` is never `2`.
+  "Is it true that f(n) = o(n), or is the lim sup f(n)/n = ∞?"
+
+The function `f` is defined upstream as `if (∃ m k ≥ 1, …) then Nat.find h
+else 0`. The `else 0` is a junk value when no valid `m, k` exists.
+erdosproblems.com itself notes that `f` is undefined at `n = 2` and `n = 5`,
+so the upstream `textbook`-tagged sanity check `f 2 = 0` simply verifies
+that the `else` branch fires. It is *not* progress on the asymptotic
+question. See memo `memory/0020-proof-erdos-1054-f2.md` for the full
+discussion.
+
+Mathematical argument for `f 2 = 0`: the sum `∑_{i<k} nth (· ∈ divisors m) i`
+is never `2`.
+
 * For `m = 0`: all `Nat.nth` values are `0`, sum is `0`.
 * For `m = 1`: only divisor is `1`, sum is `1` (for any `k ≥ 1`).
 * For `m ≥ 2`, `k = 1`: sum is `nth 0 = 1`.
 * For `m ≥ 2`, `k ≥ 2`: sum ≥ `nth 0 + nth 1 ≥ 1 + 2 = 3`.
 
-In all cases, sum ≠ 2.
+In all cases, sum ≠ 2, so the existential fails and `f 2 = 0`.
 -/
 
 import Mathlib
