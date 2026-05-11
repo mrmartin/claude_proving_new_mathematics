@@ -121,6 +121,7 @@ Mihailescu).
 | 0020 | proof  | [Erdős 1054 — `f_undefined_at_2`: Lean encoding sanity check, NOT a solution to the problem](memory/0020-proof-erdos-1054-f2.md) | shipped (local, but not substantive) |
 | 0021 | proof  | [Erdős 399 `.sum_two_squares`: characterises all `n ≤ 6` solutions; `n ≥ 7` blocked by missing Bertrand-in-AP](memory/0021-proof-erdos-399-sum-two-squares-partial.md) | partial (n ≤ 6 shipped) |
 | 0022 | fail   | [Erdős 1113 `.infinitely_many_sierpinski`: misclassified — parent problem is OPEN on erdosproblems.com](memory/0022-fail-erdos-1113-misclassified-open-parent.md) | abandoned (off-target) |
+| 0023 | target | [Erdős 1148 `.variants.weaker` — `n = x²+y²-z²` with slack `2√n`](memory/0023-target-erdos-1148-weaker.md) | go |
 
 ## Local layout
 
