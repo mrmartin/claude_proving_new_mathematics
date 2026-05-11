@@ -125,6 +125,8 @@ Mihailescu).
 | 0024 | proof  | [Erdős 1148 `.variants.weaker` — Goal-2 four-case construction](memory/0024-proof-erdos-1148-weaker.md) | shipped (local) |
 | 0025 | target | [Erdős 613 (parent, disproved) — Tao's n=5 Pikhurko counterexample](memory/0025-target-erdos-613.md) | go |
 | 0026 | proof  | [Erdős 613 — bridge for Tao's `PikhurkoN5.red_triangle_of_no_blue_star`](memory/0026-proof-erdos-613-bridge.md) | shipped (local) |
+| 0027 | target | [Erdős 499 (parent, SOLVED) — Marcus-Minc 1962 via plby/Aristotle](memory/0027-target-erdos-499.md) | go |
+| 0028 | proof  | [Erdős 499 — bridge for plby/Aristotle's Marcus-Minc proof](memory/0028-proof-erdos-499-bridge.md) | shipped (local) |
 
 ## Local layout
 
