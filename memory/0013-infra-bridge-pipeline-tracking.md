@@ -55,8 +55,8 @@ knows they were considered.
 | 259  | 1012 | gist `ster-oc` | – | **shipped 0018** |
 | 268  | 1297 | gist `madeve-unipi` | – | **blocked**: gist proves only the d=3 case (`harmonicSubseriesSet : Set (Fin 3 → ℝ)`); upstream signature is parameterised by general `d : ℕ` — d=0, 1, 2 each need separate handling and d≥3 needs projection. Plus 1 native_decide instance to replace. |
 | 275  | 578 | plby v4.24.0 | – | **blocked**: v4.24.0 → v4.28.0 drift on `Finset.card_image_le` ↔ `List.length` cross-comparison (gist's tactic chain doesn't elaborate; needs nontrivial rewrite). |
-| 303  | 1702 (forum thread) | forum-only; not a direct file | – | **untested** — forum-thread URL; would need scraping the post to extract the Lean code. |
-| 331  | 0 (Woett URL 404) | – | – | **untested** — URL returns 404; the path `ErdosProblem%23331.lean` doesn't exist on Woett/Lean-files main; may have been renamed/moved. |
+| 303  | 3926 (decoded from forum) | forum-only — decoded via live.lean-lang.org `codez=` payload (LZ-string base64) | – | **decoded + blocked**: gist signature matches upstream RHS (Brown-Rödl reciprocal-3-AP coloring result). 1-line bridge possible *if* gist compiles — but it doesn't: 10+ v4.24.0 → v4.28.0 drift errors (`field_simp made no progress`, type mismatches, unsolved goals in deeply-nested ring arguments). |
+| 331  | 438 (correct URL `ErdosProblem331.lean`, no `%23`) | Woett | – | **fetched + blocked**: gist signature is `¬ ∀ A B, ...` (matches upstream RHS for 1-line bridge); but the gist itself has multiple drift errors: `Lean.Grind.NoNatZeroDivisors (ZMod 4)` typeclass timeout, `omega` regressions on combinatorial split, ambiguous `pow_succ'`. |
 | 347  | 2180 | ebarschkis | – | **blocked**: 2 native_decide instances + gist uses local `has_asymptotic_density_one` / `subset_sums_of_set` predicates that differ from upstream's `HasDensity (𝓟 (range (a ∘ ι))) 1` formulation; bridge needs to prove formal equivalence. |
 | 355  | 3834 | Woett | – | **blocked**: 2 v4.24.0 → v4.28.0 drifts (`h_apply_finite_seq` arity, internal `Nat.lt_succ_of_le` unification through deeply nested terms). One drift partially fixed; second too tangled. |
 | 370  | 190 | plby v4.24.0 | – | **shipped 0016** |
@@ -64,7 +64,7 @@ knows they were considered.
 | 397  | 101 (gist `llllvvuu`) | – | – | **shipped 0009–0010** |
 | 418  | 560 | plby v4.24.0 | – | **blocked**: gist uses `native_decide` ×13 (banned per `CLAUDE.md`; would introduce `Lean.ofReduceBool` axiom). |
 | 427  | 91 (gist `JohnEdwardJennings`) | – | **disqualified** — uses `axiom shiu_consecutive_primes` |
-| 434.i / 434.ii | – (forum thread) | forum-only | – | **untested** — forum-thread URL; needs scraping. |
+| 434.i / 434.ii | 357 (decoded from forum) | forum live.lean `codez=` payload | – | **decoded + disqualified**: gist uses `axiom theorem_2` (referenced from Erdős 433 — needs Erdős 433's port done first or the axiom resolved). Banned per `CLAUDE.md`. |
 | 457  | 342 | Woett (Barreto/Aristotle) | – | **shipped 0011–0012** |
 | 541  | 3072 | plby v4.24.0 | – | **blocked**: 10+ drift errors (`Eq.refl` constructor changes, type mismatches, unsolved goals). |
 | 645  | 172 | plby v4.24.0 | – | **shipped 0015** |
@@ -74,7 +74,7 @@ knows they were considered.
 | 897.i / 897.ii | 947 | plby v4.24.0 | multi-part | **blocked**: 7+ v4.24.0 → v4.28.0 drift errors (`.not_le` projection gone, `No goals to be solved`, type mismatches). |
 | 997  | 220 (gist `pitmonticone` v4.28.0) | – | **disqualified** — uses `axiom maynardTaoBFT` |
 | 1043 | 225 | plby v4.24.0 | – | **shipped 0017** |
-| 1051 | 1702 (forum thread) | forum-only | – | **untested** — forum-thread URL; needs scraping. |
+| 1051 | 803 (decoded from forum) | forum live.lean `codez=` payload | – | **decoded + bridge-substantive**: gist compiles after one trivial drift fix (`; ring` after `norm_num`). Signature mismatch: gist takes `a : ℕ → ℕ` with `0 < a n` + `2 ≤ a n` after the liminf > 1; upstream takes `a : ℕ → ℤ` with `StrictMono a` + `GrowthCondition a`. Bridge requires: (i) tail-truncation `b n := (a (n + N₀)).toNat`; (ii) shifted-liminf > 1; (iii) `ErdosSeries a = rational_prefix + ∑' n, 1/(b n · b(n+1))`; (iv) `Irrational (ℚ + Irrational)`. ≈80 lines of bridge — doable but exceeds per-bridge budget. Gist + drift fix preserved at `proofs/erdos1051/Erdos1051/Proof.lean` (deleted after this reassessment; not committed). |
 | 1067 | 2510 | plby v4.24.0 | – | **blocked-bridge-complex**: gist uses local `uncountably_chromatic`, `finite_independent_paths`, `Set.Iio (Ordinal.omega 1)` colorings; upstream uses `G.chromaticCardinal = ℵ_ 1` + `G.Subgraph` + `InfinitelyConnected`. Predicate translation ≈ 100+ lines. Gist itself compiles after one drift fix (`add_le_add_right` arg order). |
 | 1071.i | 3079 | plby v4.24.0 | – | **untested** — large; gist proves `Theorem_1`, `Corollary_2`, `Corollary_3` but upstream signature uses `Maximal (fun T : Finset (ℝ² × ℝ²) => …)` shape — bridge gap nontrivial. |
 | 1071.ii | 5385 | plby v4.24.0 | – | **untested** — gist proves `∃ S, IsMaximalDisjointCollection S UnitSquare ∧ Set.Finite S`; bridge gap to upstream's Maximal-over-Finset shape. |
@@ -186,6 +186,32 @@ In rough order of leverage:
 4. **A subagent pass** (lean4:proof-repair) on a single drift-blocked file as a proof-of-concept; if it succeeds in budget, scale up.
 
 These are concrete next-steps. Without them, the remaining candidates are individually expensive to crack.
+
+### Reassessment of scraping-blocked candidates (2026-05-11)
+
+Returned to the four candidates marked "untested — forum-only or 404"
+and decoded their Lean payloads. The forum-thread URLs encode the
+gist Lean source via `live.lean-lang.org/#project=mathlib-v4.24.0&codez=<base64>`
+where the base64 is `lz-string` compressed. Decoded via the Python
+`lzstring` package (`pip install --user lzstring`,
+`LZString().decompressFromBase64(...)`).
+
+| # | Source path | Status |
+| ---:| --- | --- |
+| 303 | forum thread `https://www.erdosproblems.com/forum/thread/303`, decoded 3926 lines | **blocked** — gist matches upstream RHS for 1-line bridge, but 10+ v4.24.0→v4.28.0 drifts (`field_simp made no progress`, ring/type mismatches in deeply-nested arguments). |
+| 331 | `Woett/Lean-files/ErdosProblem331.lean` (raw GitHub, not `%23331.lean`) | **blocked** — gist matches upstream RHS, but multiple drifts: `Lean.Grind.NoNatZeroDivisors (ZMod 4)` typeclass timeout, omega regressions, ambiguous `pow_succ'`. |
+| 434 | forum thread `https://www.erdosproblems.com/forum/thread/434`, decoded 357 lines | **disqualified** — uses `axiom theorem_2` from Erdős 433 (no `formal_proof` for #433 to discharge it). |
+| 1051 | forum thread `https://www.erdosproblems.com/forum/thread/1051`, decoded 803 lines | **bridge-substantive** — gist compiles cleanly after one trivial fix; bridge needs ≈80 lines for the ℕ→ℤ container conversion + tail-truncation + series decomposition + `Irrational (ℚ + Irrational)`. The most-shippable candidate of the four; deferred only due to per-bridge budget. |
+
+**Net outcome of reassessment:** decoded all four payloads (none was
+truly unreachable), but only #1051 is genuinely shippable; #303 and
+#331 are blocked by v4.24.0→v4.28.0 drift exactly like the other plby/Aristotle
+files (this just shifts the failure mode from "no URL" to "compilation
+errors"), and #434 has a fresh axiom dependency.
+
+Sharp updated tally: still **8 shipped**, but the "untested" bucket
+collapses from 4 to 0 (all four reachable, reassessed) and the unshipped
+remainder gains one more genuinely-actionable candidate (#1051).
 
 (Updated as bridges ship.)
 
