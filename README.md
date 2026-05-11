@@ -119,6 +119,7 @@ Mihailescu).
 | 0018 | proof  | [Erdős 259 — bridge for ster-oc's Chen-Ruzsa irrational Möbius series](memory/0018-bridge-erdos-259.md) | shipped (local) |
 | 0019 | proof  | [Erdős 1051 — bridge for van Doorn–Tao series irrationality (ℕ→ℤ container)](memory/0019-bridge-erdos-1051.md) | shipped (local) |
 | 0020 | proof  | [Erdős 1054 — `f_undefined_at_2`: Lean encoding sanity check, NOT a solution to the problem](memory/0020-proof-erdos-1054-f2.md) | shipped (local, but not substantive) |
+| 0021 | proof  | [Erdős 399 `.sum_two_squares`: characterises all `n ≤ 6` solutions; `n ≥ 7` blocked by missing Bertrand-in-AP](memory/0021-proof-erdos-399-sum-two-squares-partial.md) | partial (n ≤ 6 shipped) |
 
 ## Local layout
 
