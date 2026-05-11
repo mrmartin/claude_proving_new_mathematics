@@ -135,6 +135,7 @@ Mihailescu).
 | 0034 | proof  | [Erdős 64 `Bipartite.lean`: bipartite graphs have no odd cycle](memory/0034-proof-erdos64-bipartite-no-odd-cycle.md) | shipped (local) |
 | 0035 | idea   | [Erdős 64 — `girth ≤ 2·diam+1` deferred (needs closed-walk → cycle helper)](memory/0035-idea-erdos64-girth-diam-deferred.md) | deferred |
 | 0036 | proof  | [Erdős 64 `BipartiteCubic.lean`: bipartite girth ∈ {4, 8} cases](memory/0036-proof-erdos64-bipartite-cubic-partial.md) | shipped (local, partial) |
+| 0037 | target | [Erdős 64 A3 — diameter-2 (Carr 2026): setup + statement, body deferred](memory/0037-target-erdos64-diam-two.md) | partial (statement + helper) |
 
 ## Local layout
 
