@@ -131,6 +131,7 @@ Mihailescu).
 | 0030 | proof  | [Erdős 26 `.variants.rusza` — bridge for plby/Aristotle's Ruzsa proof](memory/0030-proof-erdos-26-rusza-bridge.md) | shipped (local) |
 | 0031 | target | [Erdős 64 (Erdős–Gyárfás, OPEN, $1000) — three-track attack plan](memory/0031-target-erdos-64.md) | in-progress |
 | 0032 | infra  | [Erdős 64 project skeleton + `Basic.lean`](memory/0032-infra-erdos64-skeleton.md) | shipped (local) |
+| 0033 | proof  | [Erdős 64 `WarmUp.lean`: K₄, K₃,₃, 3-prism each have a 4-cycle](memory/0033-proof-erdos64-warmup.md) | shipped (local) |
 
 ## Local layout
 
