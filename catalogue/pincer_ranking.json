@@ -1,0 +1,10857 @@
+[
+ {
+  "n": 1,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$N\\geq \\binom{n}{\\lfloor n/2\\rfloor}$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 3059
+ },
+ {
+  "n": 10,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1921
+ },
+ {
+  "n": 100,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "sufficiently large k",
+    "for sufficiently large $n$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1184
+ },
+ {
+  "n": 1002,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1317
+ },
+ {
+  "n": 1003,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1205
+ },
+ {
+  "n": 1004,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1101
+ },
+ {
+  "n": 1005,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1318
+ },
+ {
+  "n": 101,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1494
+ },
+ {
+  "n": 1011,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 150$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1779
+ },
+ {
+  "n": 1013,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1284
+ },
+ {
+  "n": 1016,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1396
+ },
+ {
+  "n": 1017,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2073
+ },
+ {
+  "n": 102,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1695
+ },
+ {
+  "n": 1020,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq (r+1)k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 5$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 2kr^3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 4k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 3kr^2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2313
+ },
+ {
+  "n": 1029,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1489
+ },
+ {
+  "n": 103,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 952
+ },
+ {
+  "n": 1030,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1266
+ },
+ {
+  "n": 1032,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1483
+ },
+ {
+  "n": 1033,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$m\\geq t_r(n)$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 3349
+ },
+ {
+  "n": 1035,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1206
+ },
+ {
+  "n": 1038,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1869
+ },
+ {
+  "n": 1039,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1202
+ },
+ {
+  "n": 104,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1707
+ },
+ {
+  "n": 1040,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1943
+ },
+ {
+  "n": 1041,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1038
+ },
+ {
+  "n": 1045,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2439
+ },
+ {
+  "n": 1049,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 915
+ },
+ {
+  "n": 1052,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1239
+ },
+ {
+  "n": 1053,
+  "status": "OPEN",
+  "score": 5,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1185
+ },
+ {
+  "n": 1054,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 6$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Goldbach"
+  ],
+  "hopeless": [],
+  "remarks_len": 1378
+ },
+ {
+  "n": 1055,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1417
+ },
+ {
+  "n": 1056,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1320
+ },
+ {
+  "n": 1057,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1493
+ },
+ {
+  "n": 1059,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1088
+ },
+ {
+  "n": 106,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$c\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2566
+ },
+ {
+  "n": 1060,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 918
+ },
+ {
+  "n": 1061,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 900
+ },
+ {
+  "n": 1062,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1093
+ },
+ {
+  "n": 1063,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 2k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1422
+ },
+ {
+  "n": 1065,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 826
+ },
+ {
+  "n": 1066,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2215
+ },
+ {
+  "n": 1068,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1288
+ },
+ {
+  "n": 107,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1713
+ },
+ {
+  "n": 1070,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2038
+ },
+ {
+  "n": 1072,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1067
+ },
+ {
+  "n": 1073,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1086
+ },
+ {
+  "n": 1074,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2314
+ },
+ {
+  "n": 1075,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1098
+ },
+ {
+  "n": 108,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1328
+ },
+ {
+  "n": 1082,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2307
+ },
+ {
+  "n": 1083,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$d\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1988
+ },
+ {
+  "n": 1084,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2076
+ },
+ {
+  "n": 1085,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$d\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 6$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2033
+ },
+ {
+  "n": 1086,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2170
+ },
+ {
+  "n": 1087,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1039
+ },
+ {
+  "n": 1088,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1383
+ },
+ {
+  "n": 1093,
+  "status": "OPEN",
+  "score": 5,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 2k$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2204
+ },
+ {
+  "n": 1094,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 2k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq k^2-1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 2k$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2394
+ },
+ {
+  "n": 1095,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1620
+ },
+ {
+  "n": 1097,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2242
+ },
+ {
+  "n": 11,
+  "status": "OPEN",
+  "score": -2,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "verified for ...",
+    "verified this is true for all odd integers up to $2^{50}\\approx 1"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1621
+ },
+ {
+  "n": 1100,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1562
+ },
+ {
+  "n": 1101,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1734
+ },
+ {
+  "n": 1103,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2110
+ },
+ {
+  "n": 1104,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1480
+ },
+ {
+  "n": 1106,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 1363
+ },
+ {
+  "n": 1107,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1089
+ },
+ {
+  "n": 1108,
+  "status": "OPEN",
+  "score": 17,
+  "L": 1,
+  "U": 2,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$k\\leq 4$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1513
+ },
+ {
+  "n": 1109,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1498
+ },
+ {
+  "n": 111,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1472
+ },
+ {
+  "n": 1110,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2871
+ },
+ {
+  "n": 1111,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$d\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1668
+ },
+ {
+  "n": 1112,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$i\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2617
+ },
+ {
+  "n": 1113,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ],
+   [
+    "k \u2265 ...",
+    "$l\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2435
+ },
+ {
+  "n": 1117,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1261
+ },
+ {
+  "n": 112,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1497
+ },
+ {
+  "n": 1120,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1398
+ },
+ {
+  "n": 1122,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1230
+ },
+ {
+  "n": 1131,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Legendre"
+  ],
+  "hopeless": [],
+  "remarks_len": 1568
+ },
+ {
+  "n": 1132,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1942
+ },
+ {
+  "n": 1133,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1431
+ },
+ {
+  "n": 1135,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 2063
+ },
+ {
+  "n": 1137,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 817
+ },
+ {
+  "n": 1139,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 816
+ },
+ {
+  "n": 114,
+  "status": "FALSIFIABLE",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2234
+ },
+ {
+  "n": 1142,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1366
+ },
+ {
+  "n": 1143,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1218
+ },
+ {
+  "n": 1144,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1468
+ },
+ {
+  "n": 1145,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1223
+ },
+ {
+  "n": 1146,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1142
+ },
+ {
+  "n": 1150,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1209
+ },
+ {
+  "n": 1151,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1668
+ },
+ {
+  "n": 1152,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1440
+ },
+ {
+  "n": 1155,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1683
+ },
+ {
+  "n": 1156,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1847
+ },
+ {
+  "n": 1157,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$s\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq (r-t)s+t+1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1422
+ },
+ {
+  "n": 1158,
+  "status": "OPEN",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$2\\leq r\\leq 3$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1021
+ },
+ {
+  "n": 1159,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1338
+ },
+ {
+  "n": 1160,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 7$"
+   ],
+   [
+    "k \u2265 ...",
+    "$m\\geq 3619$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1283
+ },
+ {
+  "n": 1162,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 998
+ },
+ {
+  "n": 1163,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 895
+ },
+ {
+  "n": 1167,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1068
+ },
+ {
+  "n": 1168,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Continuum Hypothesis"
+  ],
+  "hopeless": [],
+  "remarks_len": 848
+ },
+ {
+  "n": 117,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1064
+ },
+ {
+  "n": 1170,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 973
+ },
+ {
+  "n": 1171,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 887
+ },
+ {
+  "n": 1172,
+  "status": "OPEN",
+  "score": -7,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [
+   "Continuum Hypothesis"
+  ],
+  "hopeless": [],
+  "remarks_len": 1272
+ },
+ {
+  "n": 1173,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Continuum Hypothesis"
+  ],
+  "hopeless": [],
+  "remarks_len": 1010
+ },
+ {
+  "n": 1175,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 955
+ },
+ {
+  "n": 1177,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1231
+ },
+ {
+  "n": 1178,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$e\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1884
+ },
+ {
+  "n": 1181,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1308
+ },
+ {
+  "n": 1182,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2198
+ },
+ {
+  "n": 1183,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1667
+ },
+ {
+  "n": 1184,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1382
+ },
+ {
+  "n": 1186,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2029
+ },
+ {
+  "n": 1188,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2472
+ },
+ {
+  "n": 1189,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2215
+ },
+ {
+  "n": 119,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$i\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1724
+ },
+ {
+  "n": 1190,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1480
+ },
+ {
+  "n": 1191,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1521
+ },
+ {
+  "n": 1192,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1177
+ },
+ {
+  "n": 1194,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1990
+ },
+ {
+  "n": 1199,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1052
+ },
+ {
+  "n": 12,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2668
+ },
+ {
+  "n": 120,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1537
+ },
+ {
+  "n": 1200,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1754
+ },
+ {
+  "n": 1201,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 946
+ },
+ {
+  "n": 1203,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 913
+ },
+ {
+  "n": 1204,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2157
+ },
+ {
+  "n": 1206,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1569
+ },
+ {
+  "n": 1207,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2216
+ },
+ {
+  "n": 1208,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$d\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$d\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2016
+ },
+ {
+  "n": 1209,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 1973
+ },
+ {
+  "n": 1210,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1139
+ },
+ {
+  "n": 1212,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2396
+ },
+ {
+  "n": 122,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1792
+ },
+ {
+  "n": 123,
+  "status": "OPEN",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$3\\leq c\\leq 87$"
+   ],
+   [
+    "range a\u2264k\u2264b",
+    "$3\\leq c\\leq 33$"
+   ],
+   [
+    "range a\u2264k\u2264b",
+    "$2\\leq c\\leq 14$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2150
+ },
+ {
+  "n": 124,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$d\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ],
+   [
+    "k \u2265 ...",
+    "$i\\geq k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2330
+ },
+ {
+  "n": 126,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1307
+ },
+ {
+  "n": 128,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1757
+ },
+ {
+  "n": 129,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "effective depending only on",
+    "depending only on"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2093
+ },
+ {
+  "n": 130,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1267
+ },
+ {
+  "n": 131,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1773
+ },
+ {
+  "n": 132,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1821
+ },
+ {
+  "n": 137,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 1402
+ },
+ {
+  "n": 138,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$N\\geq W(k)$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1524
+ },
+ {
+  "n": 14,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1829
+ },
+ {
+  "n": 141,
+  "status": "OPEN",
+  "score": 12,
+  "L": 2,
+  "U": 1,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$k\\leq 10$"
+   ],
+   [
+    "verified for ...",
+    "verified for $k\\leq 10$, see the Wikipedia page "
+   ],
+   [
+    "verified for ...",
+    "has been verified for $k\\leq 10$, see the Wikipedia page "
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 1260
+ },
+ {
+  "n": 142,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1676
+ },
+ {
+  "n": 143,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2205
+ },
+ {
+  "n": 145,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1235
+ },
+ {
+  "n": 146,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1251
+ },
+ {
+  "n": 148,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1134
+ },
+ {
+  "n": 149,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 3130
+ },
+ {
+  "n": 15,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Hardy-Littlewood"
+  ],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 2532
+ },
+ {
+  "n": 151,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1494
+ },
+ {
+  "n": 153,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 870
+ },
+ {
+  "n": 155,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 913
+ },
+ {
+  "n": 156,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 994
+ },
+ {
+  "n": 158,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 944
+ },
+ {
+  "n": 159,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1109
+ },
+ {
+  "n": 160,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1439
+ },
+ {
+  "n": 161,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2290
+ },
+ {
+  "n": 162,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1248
+ },
+ {
+  "n": 165,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$c\\geq 1/162$"
+   ],
+   [
+    "k \u2265 ...",
+    "$c\\geq 1/4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$c\\geq 1/3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$c\\geq 1/2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1724
+ },
+ {
+  "n": 167,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1120
+ },
+ {
+  "n": 168,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1496
+ },
+ {
+  "n": 169,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2132
+ },
+ {
+  "n": 17,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1227
+ },
+ {
+  "n": 170,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1312
+ },
+ {
+  "n": 172,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1532
+ },
+ {
+  "n": 173,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1032
+ },
+ {
+  "n": 174,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1549
+ },
+ {
+  "n": 176,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1808
+ },
+ {
+  "n": 177,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$d\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1292
+ },
+ {
+  "n": 18,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1498
+ },
+ {
+  "n": 180,
+  "status": "OPEN",
+  "score": 16,
+  "L": 1,
+  "U": 1,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$1\\leq i\\leq 2$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1963
+ },
+ {
+  "n": 181,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1342
+ },
+ {
+  "n": 183,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1761
+ },
+ {
+  "n": 184,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1587
+ },
+ {
+  "n": 187,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1497
+ },
+ {
+  "n": 188,
+  "status": "OPEN",
+  "score": 16,
+  "L": 1,
+  "U": 1,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$k\\leq 10000000$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 6$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1747
+ },
+ {
+  "n": 190,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1200
+ },
+ {
+  "n": 193,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1055
+ },
+ {
+  "n": 195,
+  "status": "OPEN",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$k\\leq 5$"
+   ],
+   [
+    "k \u2264 N (explicit)",
+    "$k\\leq 4$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 926
+ },
+ {
+  "n": 196,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1137
+ },
+ {
+  "n": 197,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 850
+ },
+ {
+  "n": 20,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2104
+ },
+ {
+  "n": 200,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 876
+ },
+ {
+  "n": 201,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1384
+ },
+ {
+  "n": 202,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1690
+ },
+ {
+  "n": 203,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1231
+ },
+ {
+  "n": 208,
+  "status": "OPEN",
+  "score": -8,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1554
+ },
+ {
+  "n": 212,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Bombieri-Lang",
+   "Lang conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1731
+ },
+ {
+  "n": 213,
+  "status": "OPEN",
+  "score": 2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Bombieri-Lang",
+   "Lang conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1471
+ },
+ {
+  "n": 217,
+  "status": "OPEN",
+  "score": 5,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "sufficiently large k",
+    "for sufficiently large $n$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1618
+ },
+ {
+  "n": 218,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$c\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1388
+ },
+ {
+  "n": 222,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1370
+ },
+ {
+  "n": 23,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1242
+ },
+ {
+  "n": 233,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "Riemann Hypothesis"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1393
+ },
+ {
+  "n": 234,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$c\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 822
+ },
+ {
+  "n": 236,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1108
+ },
+ {
+  "n": 238,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 957
+ },
+ {
+  "n": 241,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1532
+ },
+ {
+  "n": 242,
+  "status": "FALSIFIABLE",
+  "score": -3,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "verified for ...",
+    "verified for all $n\\leq 10^{18}$ [MiDu25] "
+   ],
+   [
+    "verified for ...",
+    "has been verified for all $n\\leq 10^{18}$ [MiDu25] "
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 2906
+ },
+ {
+  "n": 243,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1480
+ },
+ {
+  "n": 244,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 995
+ },
+ {
+  "n": 247,
+  "status": "OPEN",
+  "score": -7,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 1263
+ },
+ {
+  "n": 249,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 836
+ },
+ {
+  "n": 25,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 955
+ },
+ {
+  "n": 251,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1210
+ },
+ {
+  "n": 252,
+  "status": "OPEN",
+  "score": 15,
+  "L": 1,
+  "U": 1,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$1\\leq k\\leq 4$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 1319
+ },
+ {
+  "n": 254,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1211
+ },
+ {
+  "n": 256,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1798
+ },
+ {
+  "n": 257,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2006
+ },
+ {
+  "n": 260,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1224
+ },
+ {
+  "n": 261,
+  "status": "OPEN",
+  "score": 16,
+  "L": 1,
+  "U": 1,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$n\\leq 10000$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1559
+ },
+ {
+  "n": 263,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1812
+ },
+ {
+  "n": 264,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1845
+ },
+ {
+  "n": 265,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1788
+ },
+ {
+  "n": 267,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$c\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1308
+ },
+ {
+  "n": 269,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1315
+ },
+ {
+  "n": 271,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2043
+ },
+ {
+  "n": 272,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$N\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2136
+ },
+ {
+  "n": 273,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$p\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 851
+ },
+ {
+  "n": 274,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1472
+ },
+ {
+  "n": 276,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1655
+ },
+ {
+  "n": 278,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1206
+ },
+ {
+  "n": 279,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$t\\geq k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1340
+ },
+ {
+  "n": 28,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "all but finitely many",
+    "all but finitely many"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1326
+ },
+ {
+  "n": 282,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1/x$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1928
+ },
+ {
+  "n": 287,
+  "status": "FALSIFIABLE",
+  "score": 5,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "all but finitely many",
+    "all but at most finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1287
+ },
+ {
+  "n": 288,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1033
+ },
+ {
+  "n": 289,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1509
+ },
+ {
+  "n": 291,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2209
+ },
+ {
+  "n": 293,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1546
+ },
+ {
+  "n": 295,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$N\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1002
+ },
+ {
+  "n": 3,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2270
+ },
+ {
+  "n": 30,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1819
+ },
+ {
+  "n": 301,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1782
+ },
+ {
+  "n": 302,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1538
+ },
+ {
+  "n": 304,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1452
+ },
+ {
+  "n": 306,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1061
+ },
+ {
+  "n": 307,
+  "status": "VERIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1471
+ },
+ {
+  "n": 311,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1359
+ },
+ {
+  "n": 312,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 987
+ },
+ {
+  "n": 313,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1221
+ },
+ {
+  "n": 317,
+  "status": "OPEN",
+  "score": 5,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "sufficiently large k",
+    "for sufficiently large $n$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1527
+ },
+ {
+  "n": 319,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1515
+ },
+ {
+  "n": 32,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1972
+ },
+ {
+  "n": 320,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1538
+ },
+ {
+  "n": 321,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1225
+ },
+ {
+  "n": 322,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1958
+ },
+ {
+  "n": 323,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "sufficiently large k",
+    "for sufficiently large $x$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1267
+ },
+ {
+  "n": 324,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1514
+ },
+ {
+  "n": 325,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1119
+ },
+ {
+  "n": 326,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1135
+ },
+ {
+  "n": 327,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1285
+ },
+ {
+  "n": 329,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1572
+ },
+ {
+  "n": 33,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1706
+ },
+ {
+  "n": 330,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 765
+ },
+ {
+  "n": 332,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1183
+ },
+ {
+  "n": 334,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1190
+ },
+ {
+  "n": 335,
+  "status": "OPEN",
+  "score": -5,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 1920
+ },
+ {
+  "n": 336,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1789
+ },
+ {
+  "n": 338,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$h\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2028
+ },
+ {
+  "n": 340,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1589
+ },
+ {
+  "n": 341,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq k$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1214
+ },
+ {
+  "n": 342,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1149
+ },
+ {
+  "n": 345,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq m$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1423
+ },
+ {
+  "n": 346,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1492
+ },
+ {
+  "n": 348,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1406
+ },
+ {
+  "n": 349,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1429
+ },
+ {
+  "n": 352,
+  "status": "OPEN",
+  "score": -2,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$1\\leq n\\leq 3$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1820
+ },
+ {
+  "n": 354,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2366
+ },
+ {
+  "n": 357,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2171
+ },
+ {
+  "n": 359,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1552
+ },
+ {
+  "n": 36,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$c\\geq 1/4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1577
+ },
+ {
+  "n": 361,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 869
+ },
+ {
+  "n": 364,
+  "status": "VERIFIABLE",
+  "score": 2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1803
+ },
+ {
+  "n": 365,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1541
+ },
+ {
+  "n": 366,
+  "status": "VERIFIABLE",
+  "score": 2,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "no such ...",
+    "no other examples for $n<10^{22}$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1631
+ },
+ {
+  "n": 367,
+  "status": "OPEN",
+  "score": 10,
+  "L": 1,
+  "U": 1,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$k\\leq 2$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$a\\geq r$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1584
+ },
+ {
+  "n": 368,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 1318
+ },
+ {
+  "n": 371,
+  "status": "OPEN",
+  "score": -7,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [
+   "Elliott-Halberstam"
+  ],
+  "hopeless": [],
+  "remarks_len": 2064
+ },
+ {
+  "n": 373,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 2363
+ },
+ {
+  "n": 374,
+  "status": "OPEN",
+  "score": 16,
+  "L": 1,
+  "U": 1,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$3\\leq k\\leq 6$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1292
+ },
+ {
+  "n": 375,
+  "status": "FALSIFIABLE",
+  "score": 16,
+  "L": 2,
+  "U": 1,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$k\\leq 2$"
+   ],
+   [
+    "verified for ...",
+    "verified this is true, for all $k\\geq 1$, for all $n\\leq 1"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Legendre"
+  ],
+  "hopeless": [],
+  "remarks_len": 1506
+ },
+ {
+  "n": 376,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1804
+ },
+ {
+  "n": 377,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1625
+ },
+ {
+  "n": 382,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Cram\u00e9r's conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1863
+ },
+ {
+  "n": 383,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1031
+ },
+ {
+  "n": 385,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1486
+ },
+ {
+  "n": 386,
+  "status": "OPEN",
+  "score": -5,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 1389
+ },
+ {
+  "n": 387,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq p$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 1717
+ },
+ {
+  "n": 388,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1054
+ },
+ {
+  "n": 389,
+  "status": "OPEN",
+  "score": 16,
+  "L": 1,
+  "U": 1,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$1\\leq n\\leq 18$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1116
+ },
+ {
+  "n": 39,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1856
+ },
+ {
+  "n": 390,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 930
+ },
+ {
+  "n": 393,
+  "status": "OPEN",
+  "score": 2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1300
+ },
+ {
+  "n": 394,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1638
+ },
+ {
+  "n": 396,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1323
+ },
+ {
+  "n": 398,
+  "status": "FALSIFIABLE",
+  "score": 5,
+  "L": 2,
+  "U": 2,
+  "lower_hits": [
+   [
+    "no such ...",
+    "no other solutions below $10^9$ (see the OEIS page )"
+   ],
+   [
+    "no solutions below",
+    "There are no other solutions below"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [
+   "intractable at present"
+  ],
+  "remarks_len": 1328
+ },
+ {
+  "n": 40,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 999
+ },
+ {
+  "n": 400,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1163
+ },
+ {
+  "n": 404,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$a\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1132
+ },
+ {
+  "n": 406,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1485
+ },
+ {
+  "n": 408,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Elliott-Halberstam"
+  ],
+  "hopeless": [],
+  "remarks_len": 1624
+ },
+ {
+  "n": 409,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1553
+ },
+ {
+  "n": 41,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$h\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1513
+ },
+ {
+  "n": 410,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 921
+ },
+ {
+  "n": 411,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 6$"
+   ],
+   [
+    "k \u2265 ...",
+    "$l\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1971
+ },
+ {
+  "n": 412,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1304
+ },
+ {
+  "n": 413,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2371
+ },
+ {
+  "n": 414,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1142
+ },
+ {
+  "n": 415,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2467
+ },
+ {
+  "n": 416,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1623
+ },
+ {
+  "n": 417,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 904
+ },
+ {
+  "n": 420,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Cram\u00e9r's conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1758
+ },
+ {
+  "n": 421,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 931
+ },
+ {
+  "n": 422,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 942
+ },
+ {
+  "n": 423,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1785
+ },
+ {
+  "n": 424,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1950
+ },
+ {
+  "n": 425,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2359
+ },
+ {
+  "n": 428,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 970
+ },
+ {
+  "n": 430,
+  "status": "OPEN",
+  "score": 5,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "sufficiently large k",
+    "for sufficiently large $n$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1501
+ },
+ {
+  "n": 431,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Goldbach"
+  ],
+  "hopeless": [],
+  "remarks_len": 1842
+ },
+ {
+  "n": 432,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 855
+ },
+ {
+  "n": 436,
+  "status": "OPEN",
+  "score": 16,
+  "L": 1,
+  "U": 1,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$k\\leq 1048909$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$l\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2333
+ },
+ {
+  "n": 44,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$N\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1221
+ },
+ {
+  "n": 445,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1011
+ },
+ {
+  "n": 450,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1537
+ },
+ {
+  "n": 451,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1052
+ },
+ {
+  "n": 452,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1165
+ },
+ {
+  "n": 454,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 852
+ },
+ {
+  "n": 455,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 854
+ },
+ {
+  "n": 456,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1340
+ },
+ {
+  "n": 458,
+  "status": "FALSIFIABLE",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Legendre"
+  ],
+  "hopeless": [
+   "beyond our ability"
+  ],
+  "remarks_len": 1221
+ },
+ {
+  "n": 460,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2489
+ },
+ {
+  "n": 461,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1035
+ },
+ {
+  "n": 462,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 985
+ },
+ {
+  "n": 463,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 996
+ },
+ {
+  "n": 467,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1117
+ },
+ {
+  "n": 468,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 982
+ },
+ {
+  "n": 469,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1394
+ },
+ {
+  "n": 470,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1854
+ },
+ {
+  "n": 472,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq m$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1046
+ },
+ {
+  "n": 477,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$q\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1762
+ },
+ {
+  "n": 478,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 1968
+ },
+ {
+  "n": 479,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$i\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1268
+ },
+ {
+  "n": 483,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1688
+ },
+ {
+  "n": 486,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1590
+ },
+ {
+  "n": 488,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1695
+ },
+ {
+  "n": 489,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1074
+ },
+ {
+  "n": 495,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 887
+ },
+ {
+  "n": 5,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$C\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1849
+ },
+ {
+  "n": 50,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 955
+ },
+ {
+  "n": 500,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1445
+ },
+ {
+  "n": 501,
+  "status": "OPEN",
+  "score": -7,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [
+   "Continuum Hypothesis"
+  ],
+  "hopeless": [],
+  "remarks_len": 1580
+ },
+ {
+  "n": 503,
+  "status": "OPEN",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "checked up to",
+    "checked to"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1803
+ },
+ {
+  "n": 507,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1359
+ },
+ {
+  "n": 508,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1631
+ },
+ {
+  "n": 509,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1155
+ },
+ {
+  "n": 51,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1145
+ },
+ {
+  "n": 510,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1435
+ },
+ {
+  "n": 513,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1423
+ },
+ {
+  "n": 514,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1127
+ },
+ {
+  "n": 517,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1245
+ },
+ {
+  "n": 52,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2785
+ },
+ {
+  "n": 520,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1889
+ },
+ {
+  "n": 521,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1551
+ },
+ {
+  "n": 522,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1773
+ },
+ {
+  "n": 524,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1270
+ },
+ {
+  "n": 528,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1419
+ },
+ {
+  "n": 529,
+  "status": "OPEN",
+  "score": 5,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k sufficiently large",
+    "for $k$ sufficiently large"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1600
+ },
+ {
+  "n": 530,
+  "status": "OPEN",
+  "score": -2,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "verified for ...",
+    "verified for $A=\\{1,\\ldots,N\\}$ using standard constructions of Sidon sets"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1748
+ },
+ {
+  "n": 531,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1239
+ },
+ {
+  "n": 535,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r \\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1778
+ },
+ {
+  "n": 536,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1577
+ },
+ {
+  "n": 538,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1094
+ },
+ {
+  "n": 539,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1467
+ },
+ {
+  "n": 544,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1087
+ },
+ {
+  "n": 545,
+  "status": "OPEN",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$2\\leq m\\leq 5$"
+   ],
+   [
+    "range a\u2264k\u2264b",
+    "$7\\leq m\\leq 9$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1348
+ },
+ {
+  "n": 548,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq k+1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1827
+ },
+ {
+  "n": 550,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1036
+ },
+ {
+  "n": 552,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Cramer's conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 2785
+ },
+ {
+  "n": 554,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1763
+ },
+ {
+  "n": 555,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1154
+ },
+ {
+  "n": 557,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1113
+ },
+ {
+  "n": 558,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$s\\geq (t-1)!+1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1350
+ },
+ {
+  "n": 560,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 6$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1660
+ },
+ {
+  "n": 561,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1735
+ },
+ {
+  "n": 562,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1323
+ },
+ {
+  "n": 563,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "effective depending only on",
+    "depending only on"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1497
+ },
+ {
+  "n": 564,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1332
+ },
+ {
+  "n": 566,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1192
+ },
+ {
+  "n": 567,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1498
+ },
+ {
+  "n": 568,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 973
+ },
+ {
+  "n": 569,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 882
+ },
+ {
+  "n": 571,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$s\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$s\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$b\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$b\\geq (a-1)^2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1926
+ },
+ {
+  "n": 572,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1497
+ },
+ {
+  "n": 573,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1279
+ },
+ {
+  "n": 575,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1323
+ },
+ {
+  "n": 576,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1618
+ },
+ {
+  "n": 579,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1048
+ },
+ {
+  "n": 583,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$m\\leq 15$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2592
+ },
+ {
+  "n": 584,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1531
+ },
+ {
+  "n": 585,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1288
+ },
+ {
+  "n": 588,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1516
+ },
+ {
+  "n": 589,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1347
+ },
+ {
+  "n": 592,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1940
+ },
+ {
+  "n": 593,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1094
+ },
+ {
+  "n": 595,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1024
+ },
+ {
+  "n": 596,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1362
+ },
+ {
+  "n": 597,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1185
+ },
+ {
+  "n": 598,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 939
+ },
+ {
+  "n": 60,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1059
+ },
+ {
+  "n": 600,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1079
+ },
+ {
+  "n": 601,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1226
+ },
+ {
+  "n": 602,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 998
+ },
+ {
+  "n": 603,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1047
+ },
+ {
+  "n": 604,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2087
+ },
+ {
+  "n": 609,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1440
+ },
+ {
+  "n": 61,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2192
+ },
+ {
+  "n": 610,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1837
+ },
+ {
+  "n": 611,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1513
+ },
+ {
+  "n": 612,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2328
+ },
+ {
+  "n": 614,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 902
+ },
+ {
+  "n": 616,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1156
+ },
+ {
+  "n": 617,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1079
+ },
+ {
+  "n": 619,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1401
+ },
+ {
+  "n": 62,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1407
+ },
+ {
+  "n": 620,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1497
+ },
+ {
+  "n": 623,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1118
+ },
+ {
+  "n": 624,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2256
+ },
+ {
+  "n": 625,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2180
+ },
+ {
+  "n": 626,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1718
+ },
+ {
+  "n": 627,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1791
+ },
+ {
+  "n": 628,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1488
+ },
+ {
+  "n": 629,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1749
+ },
+ {
+  "n": 634,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$a \\geq b$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2201
+ },
+ {
+  "n": 635,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1556
+ },
+ {
+  "n": 638,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1385
+ },
+ {
+  "n": 64,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1758
+ },
+ {
+  "n": 640,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1153
+ },
+ {
+  "n": 642,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1116
+ },
+ {
+  "n": 643,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$t\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$t\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$t\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1820
+ },
+ {
+  "n": 644,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1290
+ },
+ {
+  "n": 647,
+  "status": "VERIFIABLE",
+  "score": -12,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel",
+   "Hypothesis H"
+  ],
+  "hopeless": [
+   "hopeless",
+   "extremely doubtful"
+  ],
+  "remarks_len": 1773
+ },
+ {
+  "n": 65,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1563
+ },
+ {
+  "n": 653,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1093
+ },
+ {
+  "n": 654,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2044
+ },
+ {
+  "n": 655,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1398
+ },
+ {
+  "n": 657,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2123
+ },
+ {
+  "n": 66,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1608
+ },
+ {
+  "n": 660,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1090
+ },
+ {
+  "n": 661,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1313
+ },
+ {
+  "n": 662,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1959
+ },
+ {
+  "n": 663,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1100
+ },
+ {
+  "n": 665,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2082
+ },
+ {
+  "n": 667,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1348
+ },
+ {
+  "n": 668,
+  "status": "OPEN",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$5\\leq n\\leq 21$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1314
+ },
+ {
+  "n": 669,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1378
+ },
+ {
+  "n": 670,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1391
+ },
+ {
+  "n": 671,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2004
+ },
+ {
+  "n": 672,
+  "status": "VERIFIABLE",
+  "score": 20,
+  "L": 2,
+  "U": 4,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$4\\leq k\\leq 5$"
+   ],
+   [
+    "range a\u2264k\u2264b",
+    "$4\\leq k\\leq 11$"
+   ],
+   [
+    "range a\u2264k\u2264b",
+    "$4\\leq k\\leq 34$"
+   ],
+   [
+    "impossible for ...",
+    "proved this is impossible when $k=4$ and $\\ell=2$, Obl\u00e1th [Ob51] proved this is impossible wh"
+   ],
+   [
+    "impossible for ...",
+    "proved this is impossible for $4\\leq k\\leq 5$"
+   ],
+   [
+    "impossible for ...",
+    "proved this is impossible for $4\\leq k\\leq 11$, and also impossible for $k$ sufficiently lar"
+   ],
+   [
+    "impossible for ...",
+    "proved this is impossible for $4\\leq k\\leq 34$"
+   ]
+  ],
+  "upper_hits": [
+   [
+    "k sufficiently large",
+    "for $k$ sufficiently large"
+   ],
+   [
+    "only possible for \u226a",
+    "is only possible for $k\\ll"
+   ],
+   [
+    "effective depending only on",
+    "depending only on"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2052
+ },
+ {
+  "n": 675,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1766
+ },
+ {
+  "n": 676,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$a\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$a\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1974
+ },
+ {
+  "n": 677,
+  "status": "OPEN",
+  "score": 5,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$m\\geq n+k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$m\\geq n+k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$m\\geq n+k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$l\\geq k$"
+   ],
+   [
+    "k \u2265 ...",
+    "$m\\geq n+k$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1470
+ },
+ {
+  "n": 679,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1731
+ },
+ {
+  "n": 68,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1002
+ },
+ {
+  "n": 680,
+  "status": "OPEN",
+  "score": -7,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [
+   "Cramer's conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1682
+ },
+ {
+  "n": 681,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 950
+ },
+ {
+  "n": 683,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1450
+ },
+ {
+  "n": 684,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "Riemann Hypothesis"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1992
+ },
+ {
+  "n": 685,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k \\geq (\\log n)^c$"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1097
+ },
+ {
+  "n": 686,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$N\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$m\\geq n+k$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 918
+ },
+ {
+  "n": 687,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1956
+ },
+ {
+  "n": 688,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1082
+ },
+ {
+  "n": 689,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1175
+ },
+ {
+  "n": 691,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2249
+ },
+ {
+  "n": 693,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 913
+ },
+ {
+  "n": 695,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1428
+ },
+ {
+  "n": 696,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 901
+ },
+ {
+  "n": 699,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$p\\geq i$"
+   ],
+   [
+    "k \u2265 ...",
+    "$p\\geq i$"
+   ],
+   [
+    "k \u2265 ...",
+    "$i\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1418
+ },
+ {
+  "n": 7,
+  "status": "VERIFIABLE",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 2167
+ },
+ {
+  "n": 70,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 941
+ },
+ {
+  "n": 700,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1584
+ },
+ {
+  "n": 701,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1840
+ },
+ {
+  "n": 704,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1540
+ },
+ {
+  "n": 706,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1167
+ },
+ {
+  "n": 708,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1892
+ },
+ {
+  "n": 709,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1223
+ },
+ {
+  "n": 710,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1192
+ },
+ {
+  "n": 711,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1436
+ },
+ {
+  "n": 712,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1279
+ },
+ {
+  "n": 713,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1832
+ },
+ {
+  "n": 714,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1191
+ },
+ {
+  "n": 719,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1053
+ },
+ {
+  "n": 723,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$n\\leq 11$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1304
+ },
+ {
+  "n": 724,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 7$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1128
+ },
+ {
+  "n": 725,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 960
+ },
+ {
+  "n": 726,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1028
+ },
+ {
+  "n": 727,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1334
+ },
+ {
+  "n": 730,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1283
+ },
+ {
+  "n": 731,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1015
+ },
+ {
+  "n": 734,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq n$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1341
+ },
+ {
+  "n": 738,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 831
+ },
+ {
+  "n": 74,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1406
+ },
+ {
+  "n": 740,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1687
+ },
+ {
+  "n": 743,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$n\\leq 9$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1598
+ },
+ {
+  "n": 749,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1501
+ },
+ {
+  "n": 75,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1415
+ },
+ {
+  "n": 750,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1203
+ },
+ {
+  "n": 757,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$c\\geq 1/2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1602
+ },
+ {
+  "n": 761,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1505
+ },
+ {
+  "n": 766,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1030
+ },
+ {
+  "n": 768,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1378
+ },
+ {
+  "n": 769,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq c(n)$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1429
+ },
+ {
+  "n": 77,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 3245
+ },
+ {
+  "n": 770,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1133
+ },
+ {
+  "n": 773,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1786
+ },
+ {
+  "n": 774,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1820
+ },
+ {
+  "n": 776,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1492
+ },
+ {
+  "n": 778,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1714
+ },
+ {
+  "n": 779,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "k \u2264 N (explicit)",
+    "$n\\leq 1000$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1305
+ },
+ {
+  "n": 78,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1694
+ },
+ {
+  "n": 782,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Bombieri-Lang",
+   "Lang conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1462
+ },
+ {
+  "n": 786,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 3324
+ },
+ {
+  "n": 787,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1443
+ },
+ {
+  "n": 788,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1705
+ },
+ {
+  "n": 789,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1239
+ },
+ {
+  "n": 790,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1544
+ },
+ {
+  "n": 791,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1327
+ },
+ {
+  "n": 792,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1405
+ },
+ {
+  "n": 793,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2016
+ },
+ {
+  "n": 796,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2304
+ },
+ {
+  "n": 80,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1675
+ },
+ {
+  "n": 802,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1317
+ },
+ {
+  "n": 805,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1283
+ },
+ {
+  "n": 809,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1508
+ },
+ {
+  "n": 81,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1390
+ },
+ {
+  "n": 810,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2129
+ },
+ {
+  "n": 811,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2430
+ },
+ {
+  "n": 812,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 964
+ },
+ {
+  "n": 813,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1102
+ },
+ {
+  "n": 817,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1088
+ },
+ {
+  "n": 819,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1051
+ },
+ {
+  "n": 82,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2116
+ },
+ {
+  "n": 820,
+  "status": "OPEN",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$1\\leq n\\leq 10$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1609
+ },
+ {
+  "n": 821,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1629
+ },
+ {
+  "n": 824,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1447
+ },
+ {
+  "n": 826,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 900
+ },
+ {
+  "n": 827,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1319
+ },
+ {
+  "n": 828,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 998
+ },
+ {
+  "n": 829,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 979
+ },
+ {
+  "n": 830,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1157
+ },
+ {
+  "n": 831,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 907
+ },
+ {
+  "n": 835,
+  "status": "VERIFIABLE",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$3\\leq k\\leq 8$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1404
+ },
+ {
+  "n": 836,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1846
+ },
+ {
+  "n": 837,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1299
+ },
+ {
+  "n": 838,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1075
+ },
+ {
+  "n": 839,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1246
+ },
+ {
+  "n": 84,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1265
+ },
+ {
+  "n": 840,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1632
+ },
+ {
+  "n": 849,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$t\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1459
+ },
+ {
+  "n": 85,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1398
+ },
+ {
+  "n": 850,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1803
+ },
+ {
+  "n": 852,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1012
+ },
+ {
+  "n": 853,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 966
+ },
+ {
+  "n": 854,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1682
+ },
+ {
+  "n": 855,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$x\\geq y \\gg (\\log x)^C$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Hardy-Littlewood"
+  ],
+  "hopeless": [],
+  "remarks_len": 2730
+ },
+ {
+  "n": 856,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2243
+ },
+ {
+  "n": 857,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1492
+ },
+ {
+  "n": 859,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1089
+ },
+ {
+  "n": 86,
+  "status": "OPEN",
+  "score": -11,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 1667
+ },
+ {
+  "n": 860,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1149
+ },
+ {
+  "n": 864,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1351
+ },
+ {
+  "n": 865,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1870
+ },
+ {
+  "n": 866,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1605
+ },
+ {
+  "n": 87,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1470
+ },
+ {
+  "n": 870,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1251
+ },
+ {
+  "n": 872,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2162
+ },
+ {
+  "n": 873,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1194
+ },
+ {
+  "n": 875,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1268
+ },
+ {
+  "n": 876,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1744
+ },
+ {
+  "n": 878,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2308
+ },
+ {
+  "n": 879,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [
+   "hopeless"
+  ],
+  "remarks_len": 1348
+ },
+ {
+  "n": 881,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 946
+ },
+ {
+  "n": 883,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1918
+ },
+ {
+  "n": 885,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1061
+ },
+ {
+  "n": 886,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1153
+ },
+ {
+  "n": 887,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1560
+ },
+ {
+  "n": 888,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1207
+ },
+ {
+  "n": 889,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 17$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1278
+ },
+ {
+  "n": 89,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1612
+ },
+ {
+  "n": 890,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1784
+ },
+ {
+  "n": 891,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 1665
+ },
+ {
+  "n": 892,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1726
+ },
+ {
+  "n": 893,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1209
+ },
+ {
+  "n": 9,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1646
+ },
+ {
+  "n": 90,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1993
+ },
+ {
+  "n": 901,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1556
+ },
+ {
+  "n": 902,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1081
+ },
+ {
+  "n": 906,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1265
+ },
+ {
+  "n": 91,
+  "status": "OPEN",
+  "score": 4,
+  "L": 1,
+  "U": 0,
+  "lower_hits": [
+   [
+    "range a\u2264k\u2264b",
+    "$6\\leq n\\leq 9$"
+   ]
+  ],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1580
+ },
+ {
+  "n": 911,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$e\\geq Cn$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1010
+ },
+ {
+  "n": 912,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1164
+ },
+ {
+  "n": 913,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1077
+ },
+ {
+  "n": 917,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 6$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 6$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2457
+ },
+ {
+  "n": 918,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1526
+ },
+ {
+  "n": 919,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1801
+ },
+ {
+  "n": 92,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1761
+ },
+ {
+  "n": 920,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1424
+ },
+ {
+  "n": 928,
+  "status": "OPEN",
+  "score": -8,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [
+   "Schinzel",
+   "Elliott-Halberstam"
+  ],
+  "hopeless": [],
+  "remarks_len": 1891
+ },
+ {
+  "n": 929,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1235
+ },
+ {
+  "n": 930,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1158
+ },
+ {
+  "n": 931,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ]
+  ],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1462
+ },
+ {
+  "n": 932,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1058
+ },
+ {
+  "n": 933,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1084
+ },
+ {
+  "n": 934,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$t\\geq 3$"
+   ],
+   [
+    "k \u2265 ...",
+    "$t\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1864
+ },
+ {
+  "n": 935,
+  "status": "OPEN",
+  "score": -2,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1898
+ },
+ {
+  "n": 936,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 2,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "only finitely many",
+    "only finitely many"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "abc conjecture",
+   "ABC conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1113
+ },
+ {
+  "n": 938,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "only finitely many",
+    "only finitely many"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 977
+ },
+ {
+  "n": 939,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 2$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 4$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1904
+ },
+ {
+  "n": 940,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$r\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 1838
+ },
+ {
+  "n": 942,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1361
+ },
+ {
+  "n": 943,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 794
+ },
+ {
+  "n": 944,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 4$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$r\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 5$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2240
+ },
+ {
+  "n": 945,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Cram\u00e9r's conjecture"
+  ],
+  "hopeless": [],
+  "remarks_len": 1941
+ },
+ {
+  "n": 948,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq F(k)$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1839
+ },
+ {
+  "n": 949,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1305
+ },
+ {
+  "n": 950,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1649
+ },
+ {
+  "n": 951,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1948
+ },
+ {
+  "n": 952,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1344
+ },
+ {
+  "n": 953,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1336
+ },
+ {
+  "n": 954,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$j\\geq 1$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1239
+ },
+ {
+  "n": 955,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1901
+ },
+ {
+  "n": 956,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1618
+ },
+ {
+  "n": 959,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1413
+ },
+ {
+  "n": 96,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1685
+ },
+ {
+  "n": 961,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1196
+ },
+ {
+  "n": 962,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1646
+ },
+ {
+  "n": 963,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1074
+ },
+ {
+  "n": 968,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1269
+ },
+ {
+  "n": 969,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "Riemann Hypothesis"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1385
+ },
+ {
+  "n": 97,
+  "status": "FALSIFIABLE",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2331
+ },
+ {
+  "n": 970,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1258
+ },
+ {
+  "n": 971,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1039
+ },
+ {
+  "n": 972,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1229
+ },
+ {
+  "n": 973,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1700
+ },
+ {
+  "n": 975,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1470
+ },
+ {
+  "n": 976,
+  "status": "OPEN",
+  "score": 3,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$d\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [
+   "Schinzel"
+  ],
+  "hopeless": [],
+  "remarks_len": 1527
+ },
+ {
+  "n": 978,
+  "status": "OPEN",
+  "score": -1,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$l\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$n\\geq 1$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 10$"
+   ],
+   [
+    "k \u2265 ...",
+    "$k\\geq 9$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [
+   "intractable at present"
+  ],
+  "remarks_len": 2159
+ },
+ {
+  "n": 979,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 935
+ },
+ {
+  "n": 98,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1093
+ },
+ {
+  "n": 982,
+  "status": "FALSIFIABLE",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 2314
+ },
+ {
+  "n": 983,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$n\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1404
+ },
+ {
+  "n": 985,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "Riemann Hypothesis"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1022
+ },
+ {
+  "n": 986,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$k\\geq 3$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1421
+ },
+ {
+  "n": 99,
+  "status": "OPEN",
+  "score": -6,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [
+   "RH"
+  ],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1640
+ },
+ {
+  "n": 993,
+  "status": "FALSIFIABLE",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$m\\geq 0$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1411
+ },
+ {
+  "n": 995,
+  "status": "OPEN",
+  "score": 0,
+  "L": 0,
+  "U": 0,
+  "lower_hits": [],
+  "upper_hits": [],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1460
+ },
+ {
+  "n": 996,
+  "status": "OPEN",
+  "score": 4,
+  "L": 0,
+  "U": 1,
+  "lower_hits": [],
+  "upper_hits": [
+   [
+    "k \u2265 ...",
+    "$a\\geq 2$"
+   ]
+  ],
+  "hard_blockers": [],
+  "soft_blockers": [],
+  "hopeless": [],
+  "remarks_len": 1655
+ }
+]

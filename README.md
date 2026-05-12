@@ -149,6 +149,7 @@ Mihailescu).
 | 0048 | proof  | [Erdős 64 Phase 4 Case 2C — `walk8_isCycle` + `has_2pow_cycle_of_chain8`; Carr 2026 Case 2C closed](memory/0048-proof-erdos64-walk8-case2C.md) | shipped (local) |
 | 0049 | infra  | [Erdős 64 session checkpoint, 2026-05-12 round 2 (Phase 3A `n ≤ 26` ✅; Phase 4 4-of-5 cases ✅)](memory/0049-checkpoint-erdos64-session-2026-05-12-round2.md) | shipped (local) |
 | 0050 | infra  | [**Erdős 64 — stop and wrap**: track closed; computational small-`n` artifacts aren't what `formal-conjectures` values](memory/0050-stop-erdos64-wrap.md) | track abandoned |
+| 0051 | survey | [Pincer scan over 665 open Erdős problems — find ones closable by tightening both ends; top picks #672, #1108, #398](memory/0051-survey-pincer-scan-open-erdos.md) | shipped |
 
 ## Local layout
 
