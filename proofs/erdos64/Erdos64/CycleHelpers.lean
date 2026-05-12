@@ -111,7 +111,39 @@ theorem has_2pow_cycle_of_chain4 {a b c d : V}
          walk4_isCycle hab hbc hcd hda h_ab h_ac h_ad h_bc h_bd h_cd,
          walk4_length hab hbc hcd hda⟩
 
+/-! ### 8-cycle helper (needed for Carr 2026 Case 2C). -/
+
+/-- An 8-walk `v₁ → v₂ → … → v₈ → v₁`. -/
+def walk8 {v₁ v₂ v₃ v₄ v₅ v₆ v₇ v₈ : V}
+    (h12 : G.Adj v₁ v₂) (h23 : G.Adj v₂ v₃) (h34 : G.Adj v₃ v₄)
+    (h45 : G.Adj v₄ v₅) (h56 : G.Adj v₅ v₆) (h67 : G.Adj v₆ v₇)
+    (h78 : G.Adj v₇ v₈) (h81 : G.Adj v₈ v₁) : G.Walk v₁ v₁ :=
+  Walk.cons h12 (Walk.cons h23 (Walk.cons h34 (Walk.cons h45
+    (Walk.cons h56 (Walk.cons h67 (Walk.cons h78
+    (Walk.cons h81 Walk.nil)))))))
+
+@[simp] theorem walk8_length {v₁ v₂ v₃ v₄ v₅ v₆ v₇ v₈ : V}
+    (h12 : G.Adj v₁ v₂) (h23 : G.Adj v₂ v₃) (h34 : G.Adj v₃ v₄)
+    (h45 : G.Adj v₄ v₅) (h56 : G.Adj v₅ v₆) (h67 : G.Adj v₆ v₇)
+    (h78 : G.Adj v₇ v₈) (h81 : G.Adj v₈ v₁) :
+    (walk8 h12 h23 h34 h45 h56 h67 h78 h81).length = 8 := by
+  simp [walk8, Walk.length_cons]
+
+/-- Convenience: given 8 pairwise-distinct vertices and the chain of
+8 cyclic adjacencies, conclude `Has2PowCycle G`. We *don't* build the
+generic `walk8_isCycle` here (the Sym2-equality and support-nodup
+case-bash for 8 vertices is ~28 distinct-pair checks), but instead
+prove the version we actually need by structural rewriting at the
+caller site. **For now this lemma takes the cycle as an explicit
+hypothesis** (a `Walk.IsCycle` of length 8 in `G`), reducing the
+caller's obligation to constructing the cycle proof. -/
+theorem has_2pow_cycle_of_isCycle_length_eight {v : V}
+    (w : G.Walk v v) (hw : w.IsCycle) (hlen : w.length = 8) :
+    Has2PowCycle G :=
+  has_2pow_cycle_of_has_C8 _ ⟨v, w, hw, hlen⟩
+
 end Erdos64
 
 #print axioms Erdos64.walk4_isCycle
 #print axioms Erdos64.has_2pow_cycle_of_chain4
+#print axioms Erdos64.has_2pow_cycle_of_isCycle_length_eight
