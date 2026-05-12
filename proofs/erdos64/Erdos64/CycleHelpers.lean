@@ -129,14 +129,143 @@ def walk8 {v₁ v₂ v₃ v₄ v₅ v₆ v₇ v₈ : V}
     (walk8 h12 h23 h34 h45 h56 h67 h78 h81).length = 8 := by
   simp [walk8, Walk.length_cons]
 
-/-- Convenience: given 8 pairwise-distinct vertices and the chain of
-8 cyclic adjacencies, conclude `Has2PowCycle G`. We *don't* build the
-generic `walk8_isCycle` here (the Sym2-equality and support-nodup
-case-bash for 8 vertices is ~28 distinct-pair checks), but instead
-prove the version we actually need by structural rewriting at the
-caller site. **For now this lemma takes the cycle as an explicit
-hypothesis** (a `Walk.IsCycle` of length 8 in `G`), reducing the
-caller's obligation to constructing the cycle proof. -/
+/-- Inner walk `v₂ → v₃ → v₄ → v₅ → v₆ → v₇ → v₈ → v₁` of a `walk8`. -/
+private def walk8_inner {v₁ v₂ v₃ v₄ v₅ v₆ v₇ v₈ : V}
+    (h23 : G.Adj v₂ v₃) (h34 : G.Adj v₃ v₄) (h45 : G.Adj v₄ v₅)
+    (h56 : G.Adj v₅ v₆) (h67 : G.Adj v₆ v₇) (h78 : G.Adj v₇ v₈)
+    (h81 : G.Adj v₈ v₁) : G.Walk v₂ v₁ :=
+  Walk.cons h23 (Walk.cons h34 (Walk.cons h45 (Walk.cons h56
+    (Walk.cons h67 (Walk.cons h78 (Walk.cons h81 Walk.nil))))))
+
+private theorem walk8_inner_isPath {v₁ v₂ v₃ v₄ v₅ v₆ v₇ v₈ : V}
+    (h23 : G.Adj v₂ v₃) (h34 : G.Adj v₃ v₄) (h45 : G.Adj v₄ v₅)
+    (h56 : G.Adj v₅ v₆) (h67 : G.Adj v₆ v₇) (h78 : G.Adj v₇ v₈)
+    (h81 : G.Adj v₈ v₁)
+    (d12 : v₁ ≠ v₂) (d13 : v₁ ≠ v₃) (d14 : v₁ ≠ v₄) (d15 : v₁ ≠ v₅)
+    (d16 : v₁ ≠ v₆) (d17 : v₁ ≠ v₇) (d18 : v₁ ≠ v₈)
+    (d23 : v₂ ≠ v₃) (d24 : v₂ ≠ v₄) (d25 : v₂ ≠ v₅) (d26 : v₂ ≠ v₆)
+    (d27 : v₂ ≠ v₇) (d28 : v₂ ≠ v₈)
+    (d34 : v₃ ≠ v₄) (d35 : v₃ ≠ v₅) (d36 : v₃ ≠ v₆) (d37 : v₃ ≠ v₇)
+    (d38 : v₃ ≠ v₈)
+    (d45 : v₄ ≠ v₅) (d46 : v₄ ≠ v₆) (d47 : v₄ ≠ v₇) (d48 : v₄ ≠ v₈)
+    (d56 : v₅ ≠ v₆) (d57 : v₅ ≠ v₇) (d58 : v₅ ≠ v₈)
+    (d67 : v₆ ≠ v₇) (d68 : v₆ ≠ v₈)
+    (d78 : v₇ ≠ v₈) :
+    (walk8_inner h23 h34 h45 h56 h67 h78 h81).IsPath := by
+  rw [Walk.isPath_def]
+  show (walk8_inner h23 h34 h45 h56 h67 h78 h81).support.Nodup
+  -- support = [v₂, v₃, v₄, v₅, v₆, v₇, v₈, v₁].
+  simp only [walk8_inner, Walk.support_cons, Walk.support_nil,
+             List.nodup_cons, List.mem_cons,
+             List.not_mem_nil, List.nodup_nil, or_false, not_or,
+             not_false_eq_true, and_true]
+  refine ⟨⟨d23, d24, d25, d26, d27, d28, d12.symm⟩,
+          ⟨d34, d35, d36, d37, d38, d13.symm⟩,
+          ⟨d45, d46, d47, d48, d14.symm⟩,
+          ⟨d56, d57, d58, d15.symm⟩,
+          ⟨d67, d68, d16.symm⟩,
+          ⟨d78, d17.symm⟩,
+          d18.symm⟩
+
+private theorem walk8_inner_edge_not_mem {v₁ v₂ v₃ v₄ v₅ v₆ v₇ v₈ : V}
+    (h23 : G.Adj v₂ v₃) (h34 : G.Adj v₃ v₄) (h45 : G.Adj v₄ v₅)
+    (h56 : G.Adj v₅ v₆) (h67 : G.Adj v₆ v₇) (h78 : G.Adj v₇ v₈)
+    (h81 : G.Adj v₈ v₁)
+    (d12 : v₁ ≠ v₂) (d13 : v₁ ≠ v₃) (d14 : v₁ ≠ v₄) (d15 : v₁ ≠ v₅)
+    (d16 : v₁ ≠ v₆) (d17 : v₁ ≠ v₇) (d18 : v₁ ≠ v₈)
+    (d23 : v₂ ≠ v₃) (d24 : v₂ ≠ v₄) (d25 : v₂ ≠ v₅) (d26 : v₂ ≠ v₆)
+    (d27 : v₂ ≠ v₇) (d28 : v₂ ≠ v₈) :
+    s(v₁, v₂) ∉ (walk8_inner h23 h34 h45 h56 h67 h78 h81).edges := by
+  simp only [walk8_inner, Walk.edges_cons, Walk.edges_nil,
+             List.mem_cons, List.not_mem_nil, or_false, not_or]
+  refine ⟨?_, ?_, ?_, ?_, ?_, ?_, ?_⟩
+  · -- s(v₁, v₂) ≠ s(v₂, v₃)
+    intro h
+    rcases (Sym2.eq_iff).mp h with ⟨ha, _⟩ | ⟨ha, _⟩
+    · exact d12 ha
+    · exact d13 ha
+  · -- s(v₁, v₂) ≠ s(v₃, v₄)
+    exact Sym2_ne_of_pairwise_distinct d13 d24 d14 d23
+  · -- s(v₁, v₂) ≠ s(v₄, v₅)
+    exact Sym2_ne_of_pairwise_distinct d14 d25 d15 d24
+  · -- s(v₁, v₂) ≠ s(v₅, v₆)
+    exact Sym2_ne_of_pairwise_distinct d15 d26 d16 d25
+  · -- s(v₁, v₂) ≠ s(v₆, v₇)
+    exact Sym2_ne_of_pairwise_distinct d16 d27 d17 d26
+  · -- s(v₁, v₂) ≠ s(v₇, v₈)
+    exact Sym2_ne_of_pairwise_distinct d17 d28 d18 d27
+  · -- s(v₁, v₂) ≠ s(v₈, v₁)
+    intro h
+    rcases (Sym2.eq_iff).mp h with ⟨ha, hb⟩ | ⟨_, hb⟩
+    · exact d18 ha
+    · exact d28 hb
+
+/-- Given eight pairwise-distinct vertices `v₁, …, v₈` with the eight
+chain edges `v₁ ~ v₂ ~ v₃ ~ v₄ ~ v₅ ~ v₆ ~ v₇ ~ v₈ ~ v₁`, the cyclic
+walk `walk8` is a cycle. -/
+theorem walk8_isCycle {v₁ v₂ v₃ v₄ v₅ v₆ v₇ v₈ : V}
+    (h12 : G.Adj v₁ v₂) (h23 : G.Adj v₂ v₃) (h34 : G.Adj v₃ v₄)
+    (h45 : G.Adj v₄ v₅) (h56 : G.Adj v₅ v₆) (h67 : G.Adj v₆ v₇)
+    (h78 : G.Adj v₇ v₈) (h81 : G.Adj v₈ v₁)
+    (d12 : v₁ ≠ v₂) (d13 : v₁ ≠ v₃) (d14 : v₁ ≠ v₄) (d15 : v₁ ≠ v₅)
+    (d16 : v₁ ≠ v₆) (d17 : v₁ ≠ v₇) (d18 : v₁ ≠ v₈)
+    (d23 : v₂ ≠ v₃) (d24 : v₂ ≠ v₄) (d25 : v₂ ≠ v₅) (d26 : v₂ ≠ v₆)
+    (d27 : v₂ ≠ v₇) (d28 : v₂ ≠ v₈)
+    (d34 : v₃ ≠ v₄) (d35 : v₃ ≠ v₅) (d36 : v₃ ≠ v₆) (d37 : v₃ ≠ v₇)
+    (d38 : v₃ ≠ v₈)
+    (d45 : v₄ ≠ v₅) (d46 : v₄ ≠ v₆) (d47 : v₄ ≠ v₇) (d48 : v₄ ≠ v₈)
+    (d56 : v₅ ≠ v₆) (d57 : v₅ ≠ v₇) (d58 : v₅ ≠ v₈)
+    (d67 : v₆ ≠ v₇) (d68 : v₆ ≠ v₈)
+    (d78 : v₇ ≠ v₈) :
+    (walk8 h12 h23 h34 h45 h56 h67 h78 h81).IsCycle := by
+  show (Walk.cons h12 (walk8_inner h23 h34 h45 h56 h67 h78 h81)).IsCycle
+  rw [Walk.cons_isCycle_iff]
+  refine ⟨?_, ?_⟩
+  · exact walk8_inner_isPath h23 h34 h45 h56 h67 h78 h81
+      d12 d13 d14 d15 d16 d17 d18
+      d23 d24 d25 d26 d27 d28
+      d34 d35 d36 d37 d38
+      d45 d46 d47 d48
+      d56 d57 d58
+      d67 d68
+      d78
+  · exact walk8_inner_edge_not_mem h23 h34 h45 h56 h67 h78 h81
+      d12 d13 d14 d15 d16 d17 d18
+      d23 d24 d25 d26 d27 d28
+
+/-- Convenience wrapper: an 8-cycle witness from 8 pairwise-distinct
+vertices suffices to discharge `Has2PowCycle`. Mirrors
+`has_2pow_cycle_of_chain4`. -/
+theorem has_2pow_cycle_of_chain8 {v₁ v₂ v₃ v₄ v₅ v₆ v₇ v₈ : V}
+    (h12 : G.Adj v₁ v₂) (h23 : G.Adj v₂ v₃) (h34 : G.Adj v₃ v₄)
+    (h45 : G.Adj v₄ v₅) (h56 : G.Adj v₅ v₆) (h67 : G.Adj v₆ v₇)
+    (h78 : G.Adj v₇ v₈) (h81 : G.Adj v₈ v₁)
+    (d12 : v₁ ≠ v₂) (d13 : v₁ ≠ v₃) (d14 : v₁ ≠ v₄) (d15 : v₁ ≠ v₅)
+    (d16 : v₁ ≠ v₆) (d17 : v₁ ≠ v₇) (d18 : v₁ ≠ v₈)
+    (d23 : v₂ ≠ v₃) (d24 : v₂ ≠ v₄) (d25 : v₂ ≠ v₅) (d26 : v₂ ≠ v₆)
+    (d27 : v₂ ≠ v₇) (d28 : v₂ ≠ v₈)
+    (d34 : v₃ ≠ v₄) (d35 : v₃ ≠ v₅) (d36 : v₃ ≠ v₆) (d37 : v₃ ≠ v₇)
+    (d38 : v₃ ≠ v₈)
+    (d45 : v₄ ≠ v₅) (d46 : v₄ ≠ v₆) (d47 : v₄ ≠ v₇) (d48 : v₄ ≠ v₈)
+    (d56 : v₅ ≠ v₆) (d57 : v₅ ≠ v₇) (d58 : v₅ ≠ v₈)
+    (d67 : v₆ ≠ v₇) (d68 : v₆ ≠ v₈)
+    (d78 : v₇ ≠ v₈) :
+    Has2PowCycle G := by
+  apply has_2pow_cycle_of_has_C8
+  exact ⟨v₁, walk8 h12 h23 h34 h45 h56 h67 h78 h81,
+         walk8_isCycle h12 h23 h34 h45 h56 h67 h78 h81
+           d12 d13 d14 d15 d16 d17 d18
+           d23 d24 d25 d26 d27 d28
+           d34 d35 d36 d37 d38
+           d45 d46 d47 d48
+           d56 d57 d58
+           d67 d68
+           d78,
+         walk8_length h12 h23 h34 h45 h56 h67 h78 h81⟩
+
+/-- The version we originally shipped (Phase 4 walkthrough): if you
+already have a cycle of length 8 explicitly, `Has2PowCycle G` follows.
+Kept for backwards compatibility with the `DiamTwo` outline. -/
 theorem has_2pow_cycle_of_isCycle_length_eight {v : V}
     (w : G.Walk v v) (hw : w.IsCycle) (hlen : w.length = 8) :
     Has2PowCycle G :=
@@ -146,4 +275,6 @@ end Erdos64
 
 #print axioms Erdos64.walk4_isCycle
 #print axioms Erdos64.has_2pow_cycle_of_chain4
+#print axioms Erdos64.walk8_isCycle
+#print axioms Erdos64.has_2pow_cycle_of_chain8
 #print axioms Erdos64.has_2pow_cycle_of_isCycle_length_eight
