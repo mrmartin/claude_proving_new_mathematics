@@ -20,9 +20,11 @@ that makes the gap machine-checkable.
 -/
 
 import Erdos699.Master
+import Erdos699.Tame
 import Mathlib.Data.Nat.Choose.Basic
 import Mathlib.Data.Nat.Choose.Factorization
 import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Factorization.Basic
 import Mathlib.Data.Nat.Prime.Defs
 import Mathlib.Data.Nat.GCD.Basic
 import Mathlib.Tactic
@@ -99,31 +101,88 @@ def StijnObstruction (n i j q : ℕ) : Prop :=
   Nat.factorization (n.choose i) q = 1 ∧
   ∀ k, k < j - i → ¬ q ∣ (n - i - k)
 
-/-- **Strengthened Case-B claim** (the theorem Parthasarathy's case
-analysis *actually* proves). Under the non-simultaneity hypothesis
-`¬ StijnObstruction`, the tame prime `q` does witness the gcd.
+/-- **Tame-residual Case-B closure.** Under the tame regime
+`j − i < q ≤ j` (equivalently, `q` divides `C(j, i)` by `tame_prime`),
+if the residual block contains at least one factor divisible by `q`
+(i.e. `∃ k < j − i, q ∣ (n − i − k)`), then `q` witnesses the gcd.
 
-Closing this `sorry` is plausible — it requires a careful case split
-on whether `q ∤ C(j, i)` (Case B-α, already proved) or `q | C(j, i)`
-with non-Stijn structure (Bridge or Cofactor-Escape routes 1–3). The
-case `StijnObstruction n i j q` is precisely where the naive claim
-fails and where Fix 1 / Fix 2 are needed. -/
+This closes the "lonely-prime escape" arm of Parthasarathy 2026 §4's
+case analysis cleanly: tameness plus a non-empty residual block forces
+`q ∣ C(n − i, j − i)`, and the master identity propagates divisibility
+to `C(n, j)` via the multiplicity bound `v_q(C(j, i)) ≤ 1` (which
+follows from `j < q²`, itself a consequence of tameness via
+`q ≥ max(i + 1, j − i + 1) ≥ (j + 2)/2`).
+
+The Bridge sub-case (`v_q(C(n, i)) ≥ 2`) is *not* covered by this
+helper — it requires a separate argument and is, at the time of writing,
+the same algebraic obstruction as Erdős #699 itself. -/
+theorem caseB_split_with_hyp_tame_residual {n i j q : ℕ}
+    (hq : Nat.Prime q) (hi_lt_q : i < q) (hq_le_j : q ≤ j)
+    (hq_tame_ji : j - i < q) (hij : i ≤ j) (hjn : j ≤ n)
+    (hq_dvd_ni : q ∣ n.choose i)
+    (hk : ∃ k, k < j - i ∧ q ∣ (n - i - k)) :
+    q ∣ Nat.gcd (n.choose i) (n.choose j) := by
+  obtain ⟨k₀, hk₀_lt, hq_dvd_k₀⟩ := hk
+  -- Step 1: q ∣ C(n - i, j - i) via the lonely-factor lemma.
+  have hq_dvd_Cni : q ∣ (n - i).choose (j - i) :=
+    dvd_choose_of_dvd_residual_block hq hq_tame_ji hk₀_lt hq_dvd_k₀
+  -- Step 2: tame_prime gives q ∣ C(j, i); j < q² gives v_q(C(j, i)) ≤ 1.
+  have hq_dvd_ji : q ∣ j.choose i := tame_prime hq hq_tame_ji hq_le_j hi_lt_q hij
+  have hq_ge_2 : 2 ≤ q := hq.two_le
+  have h_j_lt_qq : j < q ^ 2 := by
+    have h1 : 2 * q ≥ j + 2 := by omega
+    have h2 : q * q ≥ 2 * q := Nat.mul_le_mul_right q hq_ge_2
+    have h3 : q * q > j := by omega
+    simpa [pow_two] using h3
+  have h_v_ji_le_1 : (j.choose i).factorization q ≤ 1 :=
+    Nat.factorization_choose_le_one h_j_lt_qq
+  -- Step 3: master identity ⟹ q² ∣ C(n, j) · C(j, i).
+  have h_master : n.choose j * j.choose i = n.choose i * (n - i).choose (j - i) :=
+    master_identity hij
+  have h_qq_rhs : q ^ 2 ∣ n.choose i * (n - i).choose (j - i) := by
+    rw [pow_two]; exact mul_dvd_mul hq_dvd_ni hq_dvd_Cni
+  have h_qq_lhs : q ^ 2 ∣ n.choose j * j.choose i := h_master ▸ h_qq_rhs
+  -- Step 4: v_q split + bound ⟹ q ∣ C(n, j).
+  have h_choose_nj_pos : 0 < n.choose j := Nat.choose_pos hjn
+  have h_choose_ji_pos : 0 < j.choose i := Nat.choose_pos hij
+  have h_v_prod_ge_2 :
+      2 ≤ (n.choose j * j.choose i).factorization q :=
+    (hq.pow_dvd_iff_le_factorization
+      (Nat.mul_ne_zero h_choose_nj_pos.ne' h_choose_ji_pos.ne')).mp h_qq_lhs
+  rw [Nat.factorization_mul h_choose_nj_pos.ne' h_choose_ji_pos.ne'] at h_v_prod_ge_2
+  simp only [Finsupp.coe_add, Pi.add_apply] at h_v_prod_ge_2
+  have h_v_nj_ge_1 : 1 ≤ (n.choose j).factorization q := by omega
+  have hq_dvd_nj : q ∣ n.choose j := by
+    have h := (hq.pow_dvd_iff_le_factorization h_choose_nj_pos.ne').mpr h_v_nj_ge_1
+    simpa using h
+  exact Nat.dvd_gcd hq_dvd_ni hq_dvd_nj
+
+/-- **Strengthened Case-B claim** (the theorem Parthasarathy's case
+analysis *actually* proves, in the tame regime). Under the
+non-simultaneity hypothesis `¬ StijnObstruction` plus the tame-prime
+hypothesis `j − i < q`, the prime `q` witnesses the gcd *except* in the
+Bridge sub-case `v_q(C(n, i)) ≥ 2`. The remaining sorry corresponds
+precisely to that Bridge case — a strictly smaller open obstruction
+than the original (this session, memo `0055`, narrowed the sorry from
+the full `q ∣ C(j, i)` arm to its `v_q(C(n, i)) ≥ 2` sub-arm). -/
 theorem caseB_split_with_hyp {n i j q : ℕ}
     (hq : Nat.Prime q) (hi_lt_q : i < q) (hq_le_j : q ≤ j)
-    (hij : i ≤ j) (hjn : j ≤ n)
+    (hq_tame_ji : j - i < q) (hij : i ≤ j) (hjn : j ≤ n)
     (hq_dvd_ni : q ∣ n.choose i)
     (h_not_stijn : ¬ StijnObstruction n i j q) :
     q ∣ Nat.gcd (n.choose i) (n.choose j) := by
-  -- Split on whether `q` divides `C(j, i)`. The `q ∤ C(j, i)` arm is
-  -- Case B-α (already proved). The `q ∣ C(j, i)` arm requires Bridge /
-  -- Cofactor Escape — left as `sorry`.
   by_cases hji : q ∣ j.choose i
-  · -- `q ∣ C(j, i)`: deferred to Bridge / Cofactor Escape (open).
-    -- Under `h_not_stijn` plus `q ∣ C(n, i)` plus `q ∣ C(j, i)`, the
-    -- `StijnObstruction` reduces to: either `factorization _ q ≠ 1`
-    -- (Bridge case, `v ≥ 2`) or `∃ k, q ∣ (n - i - k)` (lonely-prime
-    -- escape). Neither is formalised here.
-    sorry
+  · -- `q ∣ C(j, i)`: unpack `¬ StijnObstruction` into Bridge vs. lonely-residual.
+    by_cases hD : ∀ k, k < j - i → ¬ q ∣ (n - i - k)
+    · -- Bridge sub-case: residual block empty, so the failing conjunct is `v_q = 1`.
+      -- `¬ StijnObstruction` ∧ `q ∣ C(n, i)` ∧ `q ∣ C(j, i)` ∧ `D = empty residual`
+      -- ⟹ `v_q(C(n, i)) ≠ 1`, hence `≥ 2`. This is the same obstruction as
+      -- Erdős #699 itself; left as a *narrower* sorry than the original.
+      sorry
+    · -- Lonely-residual sub-case: ∃ k < j - i, q ∣ (n - i - k). Apply helper.
+      push_neg at hD
+      exact caseB_split_with_hyp_tame_residual
+        hq hi_lt_q hq_le_j hq_tame_ji hij hjn hq_dvd_ni hD
   · -- `q ∤ C(j, i)`: direct from `case_B_alpha`.
     exact case_B_alpha_gcd hq hij hjn hq_dvd_ni hji
 

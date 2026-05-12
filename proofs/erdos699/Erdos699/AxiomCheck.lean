@@ -22,6 +22,7 @@ namespace Erdos699
 #print axioms master_identity
 #print axioms prime_not_dvd_factorial
 #print axioms tame_prime
+#print axioms dvd_choose_of_dvd_residual_block
 #print axioms carry_lemma
 #print axioms carry_lemma_at_p
 #print axioms carry_lemma_fo_resolution
@@ -29,6 +30,7 @@ namespace Erdos699
 #print axioms dvd_choose_of_dvd_n_not_dvd_j
 #print axioms case_B_alpha
 #print axioms case_B_alpha_gcd
+#print axioms caseB_split_with_hyp_tame_residual
 #print axioms fo_char
 #print axioms fo_28_5_14
 #print axioms fo_2188_3_1094

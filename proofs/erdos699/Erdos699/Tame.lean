@@ -29,6 +29,34 @@ theorem prime_not_dvd_factorial {q m : ℕ} (hq : Nat.Prime q)
     · exact absurd (Nat.le_of_dvd (by omega) h1) (by omega)
     · exact ih (by omega) h1
 
+/-- **Lonely-factor lemma.** If `q` is a prime with `m < q`, and `q`
+divides one of the factors `(n - k)` for some `k < m`, then
+`q ∣ n.choose m`.
+
+This is the residual-block analogue of `tame_prime`: a single divisibility
+in the descending-factorial expansion of `C(n, m)` propagates to the
+binomial coefficient itself, because `q` is coprime to `m!` (the
+denominator), so the multiplicity transfers cleanly. -/
+theorem dvd_choose_of_dvd_residual_block {q n m : ℕ}
+    (hq : Nat.Prime q) (hqm : m < q)
+    {k : ℕ} (hk : k < m) (hdvd : q ∣ n - k) :
+    q ∣ n.choose m := by
+  -- Step 1: q ∣ n.descFactorial (k+1) from the recurrence.
+  have h_succ : q ∣ n.descFactorial (k + 1) := by
+    rw [Nat.descFactorial_succ]
+    exact Dvd.dvd.mul_right hdvd _
+  -- Step 2: n.descFactorial (k+1) ∣ n.descFactorial m since k+1 ≤ m.
+  have h_split :
+      (n - (k + 1)).descFactorial (m - (k + 1)) * n.descFactorial (k + 1)
+        = n.descFactorial m :=
+    Nat.descFactorial_mul_descFactorial (Nat.succ_le_of_lt hk)
+  have h_desc : q ∣ n.descFactorial m :=
+    h_split ▸ Dvd.dvd.mul_left h_succ _
+  -- Step 3: descFactorial = m! * choose, and q ∤ m! (m < q), so q ∣ choose.
+  rw [Nat.descFactorial_eq_factorial_mul_choose] at h_desc
+  have h_q_ndvd_fac : ¬ q ∣ m.factorial := prime_not_dvd_factorial hq hqm
+  exact (hq.dvd_mul.mp h_desc).resolve_left h_q_ndvd_fac
+
 /-- Tame-Prime Lemma (Parthasarathy §2.5). Every prime `q ∈ (j - i, j]`
 with `q > i` divides `C(j, i)`. -/
 theorem tame_prime {q i j : ℕ} (hq : Nat.Prime q)
