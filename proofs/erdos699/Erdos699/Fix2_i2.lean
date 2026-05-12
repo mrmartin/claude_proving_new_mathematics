@@ -114,9 +114,47 @@ theorem dichotomy_M_ge_2_witness {n k V M : ℕ}
   have hr_odd : r ≠ 2 := by omega
   exact odd_prime_dvd_choose_two hr_prime hr_odd hn_ge hr_dvd_prod
 
+/-- **Generalised Lucas mismatch.** If at *any* base-`r` digit position
+`a` the digit of `n` is strictly less than the digit of `j`, then
+`r ∣ C(n, j)`. Proved by induction on `a`, using Mathlib's recursive
+Lucas (`Choose.choose_modEq_choose_mod_mul_choose_div_nat`).
+
+This generalises `dvd_choose_of_dichotomy_digit_zero_mismatch` to higher
+digit positions and is the key tool for the harder dichotomy sub-cases. -/
+theorem dvd_choose_of_lucas_mismatch_at
+    {n j r : ℕ} (hr_prime : Nat.Prime r) :
+    ∀ a, (n / r ^ a) % r < (j / r ^ a) % r → r ∣ n.choose j := by
+  haveI : Fact r.Prime := ⟨hr_prime⟩
+  intro a
+  induction a generalizing n j with
+  | zero =>
+    intro h
+    have h_lt : n % r < j % r := by simpa using h
+    have hcong : n.choose j ≡ (n % r).choose (j % r) * (n / r).choose (j / r) [MOD r] :=
+      Choose.choose_modEq_choose_mod_mul_choose_div_nat
+    rw [Nat.choose_eq_zero_of_lt h_lt, Nat.zero_mul] at hcong
+    exact Nat.modEq_zero_iff_dvd.mp hcong
+  | succ a ih =>
+    intro h
+    have h_n_div : n / r ^ (a + 1) = (n / r) / r ^ a := by
+      rw [pow_succ']; exact (Nat.div_div_eq_div_mul n r (r ^ a)).symm
+    have h_j_div : j / r ^ (a + 1) = (j / r) / r ^ a := by
+      rw [pow_succ']; exact (Nat.div_div_eq_div_mul j r (r ^ a)).symm
+    rw [h_n_div, h_j_div] at h
+    have h_div_dvd : r ∣ (n / r).choose (j / r) := ih h
+    have hcong : n.choose j ≡ (n % r).choose (j % r) * (n / r).choose (j / r) [MOD r] :=
+      Choose.choose_modEq_choose_mod_mul_choose_div_nat
+    have h_rhs_zero :
+        (n % r).choose (j % r) * (n / r).choose (j / r) ≡ 0 [MOD r] := by
+      have h1 : (n / r).choose (j / r) ≡ 0 [MOD r] :=
+        Nat.modEq_zero_iff_dvd.mpr h_div_dvd
+      calc (n % r).choose (j % r) * (n / r).choose (j / r)
+          ≡ (n % r).choose (j % r) * 0 [MOD r] := h1.mul_left _
+        _ = 0 := Nat.mul_zero _
+    exact Nat.modEq_zero_iff_dvd.mp (hcong.trans h_rhs_zero)
+
 /-- **Step 3a (easy Lucas sub-case).** If `r` is an odd prime dividing
-`M`, `j mod r > k` (where `k = n mod 2 ∈ {0, 1}`), and `j ≤ n`, then
-`r ∣ C(n, j)`.
+`M`, `j mod r > k` (where `k = n mod 2 ∈ {0, 1}`), then `r ∣ C(n, j)`.
 
 Proof: Lucas's theorem gives
 `C(n, j) ≡ C(n mod r, j mod r) · C(n / r, j / r) (mod r)`. Since `r ∣ M`
@@ -156,12 +194,23 @@ theorem dvd_choose_of_dichotomy_digit_zero_mismatch
   rw [h_choose_zero, Nat.zero_mul] at hcong
   exact Nat.modEq_zero_iff_dvd.mp hcong
 
-/-- **Target B main statement, Phase 3 partial.** If `(n, 2, j)` admits
-dichotomy data with `M ≥ 2`, the triple is not Fully Obstructed.
+/-- **Target B main statement, Phase 3+4 partial.** If `(n, 2, j)`
+admits dichotomy data with `M ≥ 2`, the triple is not Fully Obstructed.
 
-Phase 3 closes the easy Lucas sub-case (`j mod r > k`). The exceptional
-case (`j mod r ≤ k`), which is a narrow digit-alignment configuration,
-is left as `sorry` for Phase 4. -/
+The chosen witness prime `r` is `M.minFac`. The proof closes whenever
+*any* base-`r` digit position witnesses a Lucas mismatch (`n`'s digit
+< `j`'s digit). The remaining sorry corresponds to the genuinely
+exceptional case: the base-`r` digit sequence of `j` is pointwise
+dominated by that of `n`. In that configuration `r ∤ C(n, j)`, and the
+witness prime must come from a different source — typically a Case-A
+prime in `n(n − 1)` larger than `j` (Sylvester–Schur / Bertrand), which
+is not in Mathlib and is therefore out of scope this session.
+
+Example of the remaining gap: `(n, j) = (6, 3)` with `M = 3`, `V = 1`.
+`r = 3`. Base-3 digits: `n = 6 = 20₃`, `j = 3 = 10₃`. At every
+position `j`'s digit ≤ `n`'s digit, so Lucas gives `3 ∤ C(6, 3) = 20`.
+The conjecture still holds for this triple (witness `p = 5` from
+`n(n − 1) = 30`), but our minFac-driven proof cannot find that witness. -/
 theorem pure_power_dichotomy_M_ge_2_i_eq_2 {n j k V M : ℕ}
     (hij : 2 < j) (hjn : j ≤ n / 2) (hM : 2 ≤ M)
     (h_dich : DichotomyData n 2 k V M) :
@@ -169,17 +218,17 @@ theorem pure_power_dichotomy_M_ge_2_i_eq_2 {n j k V M : ℕ}
   -- Extract the witness prime `r` with `r ∣ M`, `r ∣ C(n, 2)`.
   obtain ⟨r, hr_prime, hr_ge_3, hr_dvd_M, hr_dvd_Cn2⟩ :=
     dichotomy_M_ge_2_witness hM h_dich
-  -- Negate FO: show ¬ (∀ p, prime → 2 < p → p ∣ C(n, 2) → ¬ p ∣ C(n, j))
   intro h_FO
-  -- Specialize FO to `r`.
   apply h_FO r hr_prime (by omega : (2 : ℕ) < r) hr_dvd_Cn2
-  -- Goal: r ∣ C(n, j). Easy case `j mod r > k`, hard case `j mod r ≤ k`.
-  by_cases h_easy : k < j % r
-  · -- Easy case (Phase 3): direct Lucas digit-0 mismatch.
-    exact dvd_choose_of_dichotomy_digit_zero_mismatch
-      hr_prime hr_ge_3 hr_dvd_M h_dich h_easy
-  · -- Hard case (Phase 4): narrow digit-alignment configuration.
-    push_neg at h_easy
+  -- Goal: r ∣ C(n, j). Case-split on existence of Lucas mismatch.
+  by_cases h_any : ∃ a, (n / r ^ a) % r < (j / r ^ a) % r
+  · -- Some position witnesses a digit mismatch — Lucas closes.
+    obtain ⟨a, ha⟩ := h_any
+    exact dvd_choose_of_lucas_mismatch_at hr_prime a ha
+  · -- No digit mismatch in base r: j is pointwise ≤-dominated by n in
+    -- base r. Here `r ∤ C(n, j)` and we'd need a different witness
+    -- prime (Case-A / Sylvester–Schur). Out of scope this session.
+    push_neg at h_any
     sorry
 
 end Erdos699
