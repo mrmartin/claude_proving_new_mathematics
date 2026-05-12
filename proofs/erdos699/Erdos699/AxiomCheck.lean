@@ -16,6 +16,7 @@ import Erdos699.Absorption
 import Erdos699.FullyObstructed
 import Erdos699.CaseB
 import Erdos699.Stijn
+import Erdos699.Fix2_i2
 
 namespace Erdos699
 
@@ -35,5 +36,8 @@ namespace Erdos699
 #print axioms fo_28_5_14
 #print axioms fo_2188_3_1094
 #print axioms stijn_spirit_obstruction_witness
+#print axioms exists_odd_prime_dvd_of_coprime_two
+#print axioms odd_prime_dvd_choose_two
+#print axioms dichotomy_M_ge_2_witness
 
 end Erdos699

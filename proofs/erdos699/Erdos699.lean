@@ -6,4 +6,5 @@ import Erdos699.FullyObstructed
 import Erdos699.CaseB
 import Erdos699.Stijn
 import Erdos699.Fix2
+import Erdos699.Fix2_i2
 import Erdos699.Main
