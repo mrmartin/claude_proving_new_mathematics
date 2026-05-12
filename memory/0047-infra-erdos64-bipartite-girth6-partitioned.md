@@ -69,20 +69,27 @@ graphs (vs the buffered baseline) — correctness sanity-check ✓.
 
 `proofs/erdos64/Search/results/bipartite_g6/`:
 
-| n  | total bipartite cubic | of those, girth = 6 | all have C_8? |
-|---:|---:|---:|---|
-| 14 | 7 | 1 | ✓ |
-| 16 | 10 | 1 | ✓ |
-| 18 | 36 | 3 | ✓ |
-| 20 | 138 | 10 | ✓ |
-| 22 | 668 | 28 | ✓ |
-| 24 | 29 579 | 162 | ✓ |
-| 26 | 245 627 | 1 201 | ✓ |
-| **Total** | 275 065 | **1 406** | **all** |
+| n  | total bipartite cubic | of those, girth = 6 | all have C_8? | elapsed |
+|---:|---:|---:|---|---:|
+| 14 | 7 | 1 | ✓ | < 1 s |
+| 16 | 10 | 1 | ✓ | < 1 s |
+| 18 | 36 | 3 | ✓ | < 1 s |
+| 20 | 138 | 10 | ✓ | ~1 s |
+| 22 | 668 | 28 | ✓ | 28 s |
+| 24 | 29 579 | 162 | ✓ | 23 s |
+| 26 | 245 627 | 1 201 | ✓ | 215 s |
+| 28 | 2 291 589 | 11 415 | ✓ | 2 204 s (36.7 min) |
+| **Total** | **2 567 654** | **12 821** | **all** | |
 
 (The `total_bipartite_cubic` field is exact for `n ≥ 22`; the n=14
 through n=20 row entries come from the original buffered runs and
 report only the girth-6 subset.)
+
+The `n = 26 → n = 28` growth was 215 s → 2204 s = **10.25×**, very
+close to the `n = 24 → n = 26` ratio of 9.3×. Projecting:
+
+- `n = 30` estimate: ~10.25 × 2 204 s ≈ 22 600 s = **6.3 hours**.
+- `n = 32` estimate: ~10× 22 600 s ≈ **2.6 days**.
 
 ## Why this matters
 
@@ -94,8 +101,7 @@ becomes empirically discharged on `n ≤ 32`. Nowbandegani–Esfandiari
 `n = 32` is the cliff. 1406 graphs verified, 0 candidate
 counterexamples.
 
-Next: `n = 28` is in flight (estimated 30–90 min); then `n = 30`
-and `n = 32`.
+Next: `n = 30` (~6 hr) and `n = 32` (~2.6 days).
 
 ## Lessons
 
