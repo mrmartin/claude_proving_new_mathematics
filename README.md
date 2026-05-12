@@ -152,6 +152,7 @@ Mihailescu).
 | 0051 | survey | [Pincer scan over 665 open Erdős problems — find ones closable by tightening both ends; top picks #672, #1108, #398](memory/0051-survey-pincer-scan-open-erdos.md) | shipped |
 | 0052 | survey | [Erdős #699 (Erdős-Szekeres binomial gcd) — literature, Parthasarathy 2026 attempt + Stijn's bug, Conglu's compute, what's salvageable](memory/0052-survey-erdos699-literature.md) | shipped |
 | 0053 | target | [Erdős #699 attack — port Parthasarathy + encode Stijn's bug + attempt Fix 2 (`M≥2 ⇒ not FO`); 6-hr hard stop](memory/0053-target-erdos699.md) | in-progress |
+| 0054 | attempt | [Erdős #699 attempt 1 — 679-line `proofs/erdos699/` builds green, 12 ported lemmas axiom-clean, **`caseB_split_naive_refuted`** (Stijn bug machine-checked), 4 sorries open](memory/0054-attempt-erdos699-framework.md) | shipped (partial) |
 
 ## Local layout
 

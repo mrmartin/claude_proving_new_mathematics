@@ -54,36 +54,39 @@ theorem case_B_alpha_gcd {n i j q : ℕ} (hq : Nat.Prime q)
     q ∣ Nat.gcd (n.choose i) (n.choose j) :=
   Nat.dvd_gcd hq_dvd_ni (case_B_alpha hq hij hjn hq_dvd_ni hq_ndvd_ji)
 
-/-- **The naive Case-B claim** (Parthasarathy §4, implicit). Every
-tame prime `q ∈ (i, j]` dividing `C(n, i)` witnesses `gcd(C(n, i), C(n, j))`.
+/-- **The naive Case-B claim** (Parthasarathy 2026 §4, implicit).
+Every tame prime `q ∈ (i, j]` dividing `C(n, i)` witnesses
+`gcd(C(n, i), C(n, j))`.
 
-**This is the buggy claim.** StijnC's 2026-05-01 comment exhibits a
-configuration in which:
+We package it as a `Prop` rather than a `theorem` because — as
+StijnC pointed out on 2026-05-01 — it is **provably false** (see
+`caseB_split_naive_refuted` below). The Stijn-spirit instance
+`(n, i, j, q) = (10, 3, 5, 5)` satisfies every hypothesis but
+violates the conclusion: `5 ∣ C(10, 3) = 120` and `5 ∤ C(10, 5) = 252`,
+so `5 ∤ gcd(120, 252) = 12`. -/
+def CaseBSplitNaive : Prop :=
+  ∀ {n i j q : ℕ}, Nat.Prime q → i < q → q ≤ j → i ≤ j → j ≤ n →
+    q ∣ n.choose i → q ∣ Nat.gcd (n.choose i) (n.choose j)
 
-  * `q ∣ C(j, i)` (so case B-α does not apply),
-  * `q ∣ C(n, i)` with `v_q = 1` (so the Prime-Power Bridge Lemma
-    does not apply — it needs `v ≥ 2`),
-  * the `(j - i)`-block has no multiple of `q` (so neither the Master
-    Identity for Case B-β-i nor the lonely-prime Bridge applies on
-    `q` itself),
-  * none of the three Cofactor-Escape routes is guaranteed to fire.
-
-In that configuration, `q ∤ C(n, j)` (via the master-identity
-valuation form `v_q(C(n, j)) = 1 + 0 - 1 = 0`), so `q` is *not* a
-gcd witness. The Stijn example in `Erdos699/Stijn.lean` constructs an
-explicit instance.
-
-We leave the theorem `sorry`-bodied to make any future fix face the
-obstruction directly: a closure of `caseB_split_naive` must either
-strengthen the hypothesis (which is the route taken by
-`caseB_split_with_hyp`) or supply an alternative witness via a
-fourth Cofactor-Escape route (`Erdos699/Fix2.lean`). -/
-theorem caseB_split_naive {n i j q : ℕ}
-    (hq : Nat.Prime q) (hi_lt_q : i < q) (hq_le_j : q ≤ j)
-    (hij : i ≤ j) (hjn : j ≤ n)
-    (hq_dvd_ni : q ∣ n.choose i) :
-    q ∣ Nat.gcd (n.choose i) (n.choose j) := by
-  sorry
+/-- **The bug is real, machine-checked.** Parthasarathy's implicit
+Case-B exhaustiveness claim is refuted by the spirit instance
+`(n, i, j, q) = (10, 3, 5, 5)`. The instance also coincides with the
+known FO triple `(10, 3, 5)` — recall `gcd(C(10, 3), C(10, 5)) =
+gcd(120, 252) = 12 = 2² · 3`, so `3` *does* witness Erdős #699 at
+this triple, just not the tame prime `5`. The point of the refutation
+is that **Case B's argument cannot rely on the tame prime alone**;
+the witness must come from elsewhere (e.g. the Carry Lemma supplies
+`p = 3` here via `n − 1 = 3²`). -/
+theorem caseB_split_naive_refuted : ¬ CaseBSplitNaive := by
+  intro H
+  have h5_dvd : (5 : ℕ) ∣ Nat.choose 10 3 := by native_decide
+  have h := H (n := 10) (i := 3) (j := 5) (q := 5)
+              (by decide) (by decide) (by decide)
+              (by decide) (by decide) h5_dvd
+  -- `h : 5 ∣ Nat.gcd (Nat.choose 10 3) (Nat.choose 10 5)`
+  -- But `Nat.gcd 120 252 = 12` and `5 ∤ 12`.
+  revert h
+  native_decide
 
 /-- The "simultaneity signature" of Stijn's example: a tame prime `q`
 divides both `C(n, i)` and `C(j, i)`, the `(j - i)`-block has no
@@ -111,6 +114,17 @@ theorem caseB_split_with_hyp {n i j q : ℕ}
     (hq_dvd_ni : q ∣ n.choose i)
     (h_not_stijn : ¬ StijnObstruction n i j q) :
     q ∣ Nat.gcd (n.choose i) (n.choose j) := by
-  sorry
+  -- Split on whether `q` divides `C(j, i)`. The `q ∤ C(j, i)` arm is
+  -- Case B-α (already proved). The `q ∣ C(j, i)` arm requires Bridge /
+  -- Cofactor Escape — left as `sorry`.
+  by_cases hji : q ∣ j.choose i
+  · -- `q ∣ C(j, i)`: deferred to Bridge / Cofactor Escape (open).
+    -- Under `h_not_stijn` plus `q ∣ C(n, i)` plus `q ∣ C(j, i)`, the
+    -- `StijnObstruction` reduces to: either `factorization _ q ≠ 1`
+    -- (Bridge case, `v ≥ 2`) or `∃ k, q ∣ (n - i - k)` (lonely-prime
+    -- escape). Neither is formalised here.
+    sorry
+  · -- `q ∤ C(j, i)`: direct from `case_B_alpha`.
+    exact case_B_alpha_gcd hq hij hjn hq_dvd_ni hji
 
 end Erdos699
