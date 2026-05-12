@@ -141,6 +141,74 @@ theorem carr2026_case_2C_eightCycle
   · exact h_56.symm   -- d68: v₆ ≠ v₅
   · exact h_25        -- d78: v₂ ≠ v₅
 
+/-- **Carr 2026, Case 2A**: zero shared neighbours and `v₈ = v₁`.
+Carr's argument introduces two extra witnesses `x ∈ N(v₆) ∩ N(v₇)`
+and `y ∈ N(v₄) ∩ N(v₅)` (both existing under diameter-2) and uses
+the 8-cycle
+
+  `x — v₇ — v₅ — y — v₄ — v₁ — v₂ — v₆ — x`.
+
+Like Case 2C, this is closed by `has_2pow_cycle_of_chain8` once the
+8 adjacencies and the 28 pairwise distinctnesses (of the 8 cycle
+vertices `x, v₇, v₅, y, v₄, v₁, v₂, v₆`) are in scope. -/
+theorem carr2026_case_2A_eightCycle
+    {v₁ v₂ v₄ v₅ v₆ v₇ x y : V}
+    (hx7 : G.Adj x v₇) (h57 : G.Adj v₅ v₇) (h5y : G.Adj v₅ y)
+    (h4y : G.Adj v₄ y) (h14 : G.Adj v₁ v₄) (h12 : G.Adj v₁ v₂)
+    (h26 : G.Adj v₂ v₆) (h6x : G.Adj v₆ x)
+    -- 28 pairwise distinctness on {x, v₇, v₅, y, v₄, v₁, v₂, v₆}.
+    (dxy : x ≠ y) (dx1 : x ≠ v₁) (dx2 : x ≠ v₂) (dx4 : x ≠ v₄)
+    (dx5 : x ≠ v₅) (dx6 : x ≠ v₆) (dx7 : x ≠ v₇)
+    (dy1 : y ≠ v₁) (dy2 : y ≠ v₂) (dy4 : y ≠ v₄) (dy5 : y ≠ v₅)
+    (dy6 : y ≠ v₆) (dy7 : y ≠ v₇)
+    (h_12 : v₁ ≠ v₂) (h_14 : v₁ ≠ v₄) (h_15 : v₁ ≠ v₅) (h_16 : v₁ ≠ v₆)
+    (h_17 : v₁ ≠ v₇)
+    (h_24 : v₂ ≠ v₄) (h_25 : v₂ ≠ v₅) (h_26 : v₂ ≠ v₆) (h_27 : v₂ ≠ v₇)
+    (h_45 : v₄ ≠ v₅) (h_46 : v₄ ≠ v₆) (h_47 : v₄ ≠ v₇)
+    (h_56 : v₅ ≠ v₆) (h_57 : v₅ ≠ v₇)
+    (h_67 : v₆ ≠ v₇) :
+    Has2PowCycle G := by
+  -- u-ordering: (u₁..u₈) = (x, v₇, v₅, y, v₄, v₁, v₂, v₆).
+  apply has_2pow_cycle_of_chain8
+    (hx7)              -- u₁u₂ : x ~ v₇
+    (h57.symm)         -- u₂u₃ : v₇ ~ v₅
+    (h5y)              -- u₃u₄ : v₅ ~ y
+    (h4y.symm)         -- u₄u₅ : y ~ v₄
+    (h14.symm)         -- u₅u₆ : v₄ ~ v₁
+    (h12)              -- u₆u₇ : v₁ ~ v₂
+    (h26)              -- u₇u₈ : v₂ ~ v₆
+    (h6x)              -- u₈u₁ : v₆ ~ x
+  -- 28 distinctness in u-order (d_ij : u_i ≠ u_j for 1 ≤ i < j ≤ 8).
+  -- u₁=x, u₂=v₇, u₃=v₅, u₄=y, u₅=v₄, u₆=v₁, u₇=v₂, u₈=v₆.
+  · exact dx7              -- d12: x ≠ v₇
+  · exact dx5              -- d13: x ≠ v₅
+  · exact dxy              -- d14: x ≠ y
+  · exact dx4              -- d15: x ≠ v₄
+  · exact dx1              -- d16: x ≠ v₁
+  · exact dx2              -- d17: x ≠ v₂
+  · exact dx6              -- d18: x ≠ v₆
+  · exact h_57.symm        -- d23: v₇ ≠ v₅
+  · exact dy7.symm         -- d24: v₇ ≠ y
+  · exact h_47.symm        -- d25: v₇ ≠ v₄
+  · exact h_17.symm        -- d26: v₇ ≠ v₁
+  · exact h_27.symm        -- d27: v₇ ≠ v₂
+  · exact h_67.symm        -- d28: v₇ ≠ v₆
+  · exact dy5.symm         -- d34: v₅ ≠ y
+  · exact h_45.symm        -- d35: v₅ ≠ v₄
+  · exact h_15.symm        -- d36: v₅ ≠ v₁
+  · exact h_25.symm        -- d37: v₅ ≠ v₂
+  · exact h_56             -- d38: v₅ ≠ v₆
+  · exact dy4              -- d45: y ≠ v₄
+  · exact dy1              -- d46: y ≠ v₁
+  · exact dy2              -- d47: y ≠ v₂
+  · exact dy6              -- d48: y ≠ v₆
+  · exact h_14.symm        -- d56: v₄ ≠ v₁
+  · exact h_24.symm        -- d57: v₄ ≠ v₂
+  · exact h_46             -- d58: v₄ ≠ v₆
+  · exact h_12             -- d67: v₁ ≠ v₂
+  · exact h_16             -- d68: v₁ ≠ v₆
+  · exact h_26             -- d78: v₂ ≠ v₆
+
 /-- **Carr 2026, Theorem 1.1**: every graph with diameter 2 and minimum
 degree ≥ 3 contains a cycle of length 4 or 8.
 
@@ -157,4 +225,5 @@ end Erdos64
 
 #print axioms Erdos64.exists_two_other_neighbours
 #print axioms Erdos64.carr2026_precase_two_shared_neighbours
+#print axioms Erdos64.carr2026_case_2A_eightCycle
 #print axioms Erdos64.carr2026_case_2C_eightCycle
