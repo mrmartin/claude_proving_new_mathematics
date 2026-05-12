@@ -140,6 +140,7 @@ Mihailescu).
 | 0039 | infra  | [Erdős 64 B1 — `Search/check_cubic.py`: 11 named cubic graphs pass](memory/0039-infra-erdos64-search-b1.md) | shipped (B1.0; full pipeline needs nauty/SAT) |
 | 0040 | result | [Erdős 64 B1 — exhaustive `n ≤ 20` (all 556 463 connected cubic graphs pass)](memory/0040-result-erdos64-b1-up-to-n20.md) | shipped (local) |
 | 0041 | infra  | [Erdős 64 — session checkpoint, 2026-05-11 (Tracks A/B/C status)](memory/0041-checkpoint-erdos64-session-2026-05-11.md) | shipped (local) |
+| 0042 | infra  | [Erdős 64 Phase 1 — SAT cycle-encoder (`sat_cycle.py` + `test_sat_cycle.py`)](memory/0042-infra-erdos64-sat-cycle-encoder.md) | shipped (local) |
 
 ## Local layout
 

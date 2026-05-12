@@ -94,13 +94,39 @@ def has_cycle_of_length(G: nx.Graph, k: int) -> bool:
 
 
 def has_2pow_cycle(G: nx.Graph) -> int | None:
-    """Return the smallest k ≥ 2 such that G has a 2^k cycle, else None."""
+    """Return the smallest k ≥ 2 such that G has a 2^k cycle, else None.
+
+    DFS is used for L ∈ {4, 8} (faster than SAT for short cycles where
+    DFS short-circuits quickly). SAT (via `sat_cycle.has_cycle_of_length_sat_fast`)
+    is used for L ∈ {16, 32, 64, …} where the position-encoded CNF is
+    orders of magnitude faster than the n^L DFS enumeration.
+    """
     n = G.number_of_nodes()
-    for k in range(2, 8):  # 2^k up to 128
+    # k = 2, 3 → DFS (L = 4, 8 — DFS short-circuits trivially when present).
+    for k in (2, 3):
         L = 2 ** k
         if L > n:
             return None
         if has_cycle_of_length(G, L):
+            return k
+    # k ≥ 4 → SAT.
+    try:
+        from sat_cycle import has_cycle_of_length_sat_fast
+    except ImportError as e:
+        # Fallback: DFS for everything. (Slow at L = 16.)
+        for k in range(4, 8):
+            L = 2 ** k
+            if L > n:
+                return None
+            if has_cycle_of_length(G, L):
+                return k
+        return None
+    g6 = nx.to_graph6_bytes(G, header=False).strip()
+    for k in range(4, 8):
+        L = 2 ** k
+        if L > n:
+            return None
+        if has_cycle_of_length_sat_fast(g6, n, L):
             return k
     return None
 
