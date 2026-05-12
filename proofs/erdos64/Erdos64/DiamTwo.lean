@@ -22,6 +22,7 @@ as item *A3.0*.
 -/
 
 import Erdos64.Basic
+import Erdos64.CycleHelpers
 
 namespace Erdos64
 
@@ -49,11 +50,36 @@ theorem exists_two_other_neighbours
   · rw [← G.mem_neighborFinset]; exact (Finset.mem_erase.mp hv₃_mem).2
   · rw [← G.mem_neighborFinset]; exact (Finset.mem_erase.mp hv₄_mem).2
 
+/-- **Carr 2026 pre-case**: if an edge `v₁ v₂` has two *distinct* common
+external neighbours `v₃ ≠ v₄`, then `G` has a 4-cycle. This is the case
+that the main Carr argument discharges *before* the Case 1 / Case 2
+split, and is closed by `has_2pow_cycle_of_chain4`. -/
+theorem carr2026_precase_two_shared_neighbours
+    {v₁ v₂ v₃ v₄ : V} (h₁₂ : G.Adj v₁ v₂)
+    (h₁₃ : G.Adj v₁ v₃) (h₂₃ : G.Adj v₂ v₃)
+    (h₁₄ : G.Adj v₁ v₄) (h₂₄ : G.Adj v₂ v₄)
+    (h₃₄ : v₃ ≠ v₄) :
+    Has2PowCycle G := by
+  -- 4-cycle: v₁ → v₃ → v₂ → v₄ → v₁.
+  apply has_2pow_cycle_of_chain4
+    (h₁₃)               -- v₁ ~ v₃
+    (h₂₃.symm)          -- v₃ ~ v₂
+    (h₂₄)               -- v₂ ~ v₄
+    (h₁₄.symm)          -- v₄ ~ v₁
+  · exact h₁₃.ne                 -- v₁ ≠ v₃
+  · exact h₁₂.ne                 -- v₁ ≠ v₂
+  · exact h₁₄.ne                 -- v₁ ≠ v₄
+  · exact h₂₃.ne'                -- v₃ ≠ v₂  (note flipped)
+  · exact h₃₄                    -- v₃ ≠ v₄
+  · exact h₂₄.ne                 -- v₂ ≠ v₄
+
 /-- **Carr 2026, Theorem 1.1**: every graph with diameter 2 and minimum
 degree ≥ 3 contains a cycle of length 4 or 8.
 
-Proof body deferred; see memo 0037 for the per-claim breakdown of
-Carr's argument (Cases 1, 2A, 2B, 2C). -/
+Proof body deferred; the pre-case (two shared neighbours → `C₄`) is
+discharged by `carr2026_precase_two_shared_neighbours` above. Cases 1,
+2A, 2B, 2C from Carr 2026 remain `sorry`. See memo 0037 for the
+per-claim breakdown. -/
 theorem carr2026_diam_two_minDegree_three
     (_hδ : 3 ≤ G.minDegree) (_hd : G.diam ≤ 2) (_hd_pos : G.diam ≠ 0) :
     Has2PowCycle G := by
