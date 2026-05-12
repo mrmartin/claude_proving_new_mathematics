@@ -151,6 +151,7 @@ Mihailescu).
 | 0050 | infra  | [**Erdős 64 — stop and wrap**: track closed; computational small-`n` artifacts aren't what `formal-conjectures` values](memory/0050-stop-erdos64-wrap.md) | track abandoned |
 | 0051 | survey | [Pincer scan over 665 open Erdős problems — find ones closable by tightening both ends; top picks #672, #1108, #398](memory/0051-survey-pincer-scan-open-erdos.md) | shipped |
 | 0052 | survey | [Erdős #699 (Erdős-Szekeres binomial gcd) — literature, Parthasarathy 2026 attempt + Stijn's bug, Conglu's compute, what's salvageable](memory/0052-survey-erdos699-literature.md) | shipped |
+| 0053 | target | [Erdős #699 attack — port Parthasarathy + encode Stijn's bug + attempt Fix 2 (`M≥2 ⇒ not FO`); 6-hr hard stop](memory/0053-target-erdos699.md) | in-progress |
 
 ## Local layout
 
