@@ -39,5 +39,6 @@ namespace Erdos699
 #print axioms exists_odd_prime_dvd_of_coprime_two
 #print axioms odd_prime_dvd_choose_two
 #print axioms dichotomy_M_ge_2_witness
+#print axioms dvd_choose_of_dichotomy_digit_zero_mismatch
 
 end Erdos699

@@ -114,18 +114,72 @@ theorem dichotomy_M_ge_2_witness {n k V M : ℕ}
   have hr_odd : r ≠ 2 := by omega
   exact odd_prime_dvd_choose_two hr_prime hr_odd hn_ge hr_dvd_prod
 
-/-- **Target B main statement (Phase 2 stub).** If `(n, 2, j)` admits
+/-- **Step 3a (easy Lucas sub-case).** If `r` is an odd prime dividing
+`M`, `j mod r > k` (where `k = n mod 2 ∈ {0, 1}`), and `j ≤ n`, then
+`r ∣ C(n, j)`.
+
+Proof: Lucas's theorem gives
+`C(n, j) ≡ C(n mod r, j mod r) · C(n / r, j / r) (mod r)`. Since `r ∣ M`
+and `n − k = 2^V · M`, we have `r ∣ n − k`, so `n mod r = k mod r = k`
+(using `k < r`). Then `C(n mod r, j mod r) = C(k, j mod r) = 0`
+because `k < j mod r`. So `r ∣ C(n, j)`. -/
+theorem dvd_choose_of_dichotomy_digit_zero_mismatch
+    {n j k V M r : ℕ}
+    (hr_prime : Nat.Prime r) (hr_ge_3 : 3 ≤ r) (hr_dvd_M : r ∣ M)
+    (h_dich : DichotomyData n 2 k V M)
+    (h_mismatch : k < j % r) :
+    r ∣ n.choose j := by
+  obtain ⟨hk_def, _hVge1, _hcop, hnk⟩ := h_dich
+  haveI : Fact r.Prime := ⟨hr_prime⟩
+  -- `k ≤ 1`
+  have hk_le_1 : k ≤ 1 := by rw [hk_def]; omega
+  have hk_lt_r : k < r := by omega
+  -- `n = k + 2^V * M` from `n - k = 2^V * M` and `k ≤ n`.
+  have hk_le_n : k ≤ n := by
+    rw [hk_def]; exact Nat.mod_le _ _
+  have h_n_eq : n = k + 2 ^ V * M := by omega
+  -- `r ∣ 2^V * M` (since `r ∣ M`).
+  have h_r_dvd_VM : r ∣ 2 ^ V * M := Dvd.dvd.mul_left hr_dvd_M _
+  -- `n mod r = k`: rewrite `n = k + r · c` (since `r ∣ 2^V · M`).
+  have h_n_mod : n % r = k := by
+    rcases h_r_dvd_VM with ⟨c, hc⟩
+    rw [h_n_eq, hc, Nat.add_mul_mod_self_left]
+    exact Nat.mod_eq_of_lt hk_lt_r
+  -- C(k, j mod r) = 0 since k < j mod r.
+  have h_choose_zero : Nat.choose (n % r) (j % r) = 0 := by
+    rw [h_n_mod]
+    exact Nat.choose_eq_zero_of_lt h_mismatch
+  -- Lucas: C(n, j) ≡ C(n mod r, j mod r) · C(n / r, j / r) (mod r).
+  have hcong : n.choose j ≡
+      Nat.choose (n % r) (j % r) * Nat.choose (n / r) (j / r) [MOD r] :=
+    Choose.choose_modEq_choose_mod_mul_choose_div_nat
+  rw [h_choose_zero, Nat.zero_mul] at hcong
+  exact Nat.modEq_zero_iff_dvd.mp hcong
+
+/-- **Target B main statement, Phase 3 partial.** If `(n, 2, j)` admits
 dichotomy data with `M ≥ 2`, the triple is not Fully Obstructed.
 
-This file's Phase-2 commit only proves the foundations (Steps 1 + 2):
-`dichotomy_M_ge_2_witness` exhibits an odd prime `r ≥ 3` with
-`r ∣ C(n, 2)`. Phase 3 will close the easy Lucas sub-case
-(`j mod r > k`); Phase 4 will attempt the exceptional digit-alignment
-case (`j mod r ≤ k`). Until then the body is `sorry`. -/
+Phase 3 closes the easy Lucas sub-case (`j mod r > k`). The exceptional
+case (`j mod r ≤ k`), which is a narrow digit-alignment configuration,
+is left as `sorry` for Phase 4. -/
 theorem pure_power_dichotomy_M_ge_2_i_eq_2 {n j k V M : ℕ}
     (hij : 2 < j) (hjn : j ≤ n / 2) (hM : 2 ≤ M)
     (h_dich : DichotomyData n 2 k V M) :
     ¬ FullyObstructed n 2 j := by
-  sorry
+  -- Extract the witness prime `r` with `r ∣ M`, `r ∣ C(n, 2)`.
+  obtain ⟨r, hr_prime, hr_ge_3, hr_dvd_M, hr_dvd_Cn2⟩ :=
+    dichotomy_M_ge_2_witness hM h_dich
+  -- Negate FO: show ¬ (∀ p, prime → 2 < p → p ∣ C(n, 2) → ¬ p ∣ C(n, j))
+  intro h_FO
+  -- Specialize FO to `r`.
+  apply h_FO r hr_prime (by omega : (2 : ℕ) < r) hr_dvd_Cn2
+  -- Goal: r ∣ C(n, j). Easy case `j mod r > k`, hard case `j mod r ≤ k`.
+  by_cases h_easy : k < j % r
+  · -- Easy case (Phase 3): direct Lucas digit-0 mismatch.
+    exact dvd_choose_of_dichotomy_digit_zero_mismatch
+      hr_prime hr_ge_3 hr_dvd_M h_dich h_easy
+  · -- Hard case (Phase 4): narrow digit-alignment configuration.
+    push_neg at h_easy
+    sorry
 
 end Erdos699
