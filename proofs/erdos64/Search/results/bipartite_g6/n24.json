@@ -1,9 +1,10 @@
 {
   "n": 24,
-  "geng_command": "geng -bcd3 -D3 24",
+  "geng_command": "geng -bcd3 -D3 24 (partitioned, M=24)",
+  "total_bipartite_cubic": 29579,
   "total_bipartite_cubic_girth6": 162,
-  "elapsed_enumerate_seconds": 341.8844425678253,
-  "elapsed_check_seconds": 4.347994089126587,
+  "elapsed_seconds": 22.9753315448761,
+  "slices": 24,
   "no_C8_but_has_other_2pow": [],
   "candidate_counterexamples_to_erdos_64": []
 }

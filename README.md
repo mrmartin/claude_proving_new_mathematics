@@ -145,6 +145,8 @@ Mihailescu).
 | 0044 | target | [Erdős 64 Phase 3B — bipartite cubic girth-6 structural attempt](memory/0044-target-erdos64-bipartite-girth6-structural.md) | in-progress |
 | 0045 | proof  | [Erdős 64 Phase 4 prereq — `CycleHelpers.lean` (`walk4_isCycle`, `has_2pow_cycle_of_chain4`)](memory/0045-proof-erdos64-cycle-helpers.md) | shipped (local) |
 | 0046 | infra  | [Erdős 64 session checkpoint, 2026-05-12 (Phase 1 ✅; Phase 3A `n ≤ 24` ✅; Phase 4 pre-case ✅)](memory/0046-checkpoint-erdos64-session-2026-05-12.md) | shipped (local) |
+| 0047 | infra  | [Erdős 64 Phase 3A — partitioned `geng res/mod`; `n ≤ 26` (1 406 graphs all pass)](memory/0047-infra-erdos64-bipartite-girth6-partitioned.md) | shipped (local) |
+| 0048 | proof  | [Erdős 64 Phase 4 Case 2C — `walk8_isCycle` + `has_2pow_cycle_of_chain8`; Carr 2026 Case 2C closed](memory/0048-proof-erdos64-walk8-case2C.md) | shipped (local) |
 
 ## Local layout
 

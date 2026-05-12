@@ -4,6 +4,11 @@ build/
 *.olean
 *.ilean
 *.trace
+lake-manifest.json
+
+# Python build artifacts
+__pycache__/
+*.pyc
 
 # Editor / OS noise
 .DS_Store
