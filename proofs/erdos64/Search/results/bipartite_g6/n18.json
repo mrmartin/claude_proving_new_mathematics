@@ -1,0 +1,9 @@
+{
+  "n": 18,
+  "geng_command": "geng -bcd3 -D3 18",
+  "total_bipartite_cubic_girth6": 3,
+  "elapsed_enumerate_seconds": 0.3161275386810303,
+  "elapsed_check_seconds": 0.051755666732788086,
+  "no_C8_but_has_other_2pow": [],
+  "candidate_counterexamples_to_erdos_64": []
+}

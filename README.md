@@ -141,6 +141,7 @@ Mihailescu).
 | 0040 | result | [Erdős 64 B1 — exhaustive `n ≤ 20` (all 556 463 connected cubic graphs pass)](memory/0040-result-erdos64-b1-up-to-n20.md) | shipped (local) |
 | 0041 | infra  | [Erdős 64 — session checkpoint, 2026-05-11 (Tracks A/B/C status)](memory/0041-checkpoint-erdos64-session-2026-05-11.md) | shipped (local) |
 | 0042 | infra  | [Erdős 64 Phase 1 — SAT cycle-encoder (`sat_cycle.py` + `test_sat_cycle.py`)](memory/0042-infra-erdos64-sat-cycle-encoder.md) | shipped (local) |
+| 0043 | result | [Erdős 64 Phase 3A — bipartite cubic girth-6, all 43 graphs on `n ≤ 22` have `C_8`](memory/0043-result-erdos64-bipartite-girth6-n14-to-n22.md) | shipped (local) |
 
 ## Local layout
 
